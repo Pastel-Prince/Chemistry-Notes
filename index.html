@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Lesson notes markdown</title>
+      <style>
+.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(238, 255, 255); overflow: auto; background-color: rgb(38, 50, 56); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(156, 255, 255); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(0, 150, 136); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(156, 255, 255); border-color: rgb(71, 93, 105); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(71, 93, 105); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(71, 93, 105); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(54, 72, 80); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(46, 61, 68); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(71, 93, 105) rgb(71, 93, 105) rgb(59, 77, 86); background-color: rgb(54, 72, 80); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top: 1px solid rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview { color: rgba(238, 255, 255, 0.8); background-color: rgb(42, 55, 62); }
+.markdown-preview code { color: rgba(238, 255, 255, 0.8); background-color: rgb(46, 61, 68); }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3 { border-color: rgba(238, 255, 255, 0.0980392); }
+.markdown-preview table tr { border-color: rgb(59, 77, 86); background: none; }
+.markdown-preview table tr:nth-child(2n) { background-color: rgb(46, 61, 68); }
+.markdown-preview table th, .markdown-preview table td { border-color: rgb(59, 77, 86); }
+.markdown-preview table th { background-color: rgb(54, 72, 80); }
+.markdown-preview small { font-size: 80%; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+* {
+  color: black;
+}
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #263238;
+  color: #eeffff;
+}
+pre.editor-colors .wrap-guide {
+  background-color: #2b3940;
+}
+pre.editor-colors .indent-guide {
+  color: #2b3940;
+}
+pre.editor-colors .invisible-character {
+  color: #373b41;
+}
+pre.editor-colors .cursor-line {
+  background-color: #212b30;
+}
+pre.editor-colors .gutter {
+  background-color: #263238;
+  color: rgba(238, 255, 255, 0.2);
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  background-color: #212b30;
+  color: rgba(238, 255, 255, 0.2);
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  color: rgba(238, 255, 255, 0.2);
+}
+pre.editor-colors .fold-marker:after,
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after {
+  color: #b2ccd6;
+}
+pre.editor-colors .invisible {
+  color: #eeffff;
+}
+pre.editor-colors .cursor {
+  color: #009688;
+  border-width: 2px;
+}
+pre.editor-colors .selection .region {
+  background-color: #3b4d56;
+}
+pre.editor-colors .search-results .syntax--marker .region {
+  background-color: transparent;
+  border: 1px solid #b2ccd6;
+}
+pre.editor-colors .search-results .syntax--marker.current-result .region {
+  border: 1px solid #ffffff;
+}
+.syntax--comment {
+  color: #4f6875;
+}
+.syntax--keyword {
+  color: #c792ea;
+}
+.syntax--keyword.syntax--control {
+  color: #c792ea;
+}
+.syntax--keyword.syntax--control.syntax--elements {
+  color: #b2ccd6;
+}
+.syntax--keyword.syntax--operator {
+  color: #89ddf3;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #82aaff;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #ffcb6b;
+}
+.syntax--storage {
+  color: #c792ea;
+}
+.syntax--constant {
+  color: #f07178;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #89ddf3;
+}
+.syntax--constant.syntax--numeric {
+  color: #f78c6a;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #89ddf3;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #c3e88d;
+}
+.syntax--variable {
+  color: #eeffff;
+}
+.syntax--variable.syntax--interpolation {
+  color: #eb434c;
+}
+.syntax--variable.syntax--parameter.syntax--function {
+  color: #f78c6a;
+}
+.syntax--variable.syntax--language {
+  color: #ff5370;
+}
+.syntax--variable.syntax--variable.syntax--object {
+  color: #ffcb6b;
+}
+.syntax--invalid.syntax--illegal {
+  background-color: #f07178;
+  color: #263238;
+}
+.syntax--string {
+  color: #c3e88d;
+}
+.syntax--string.syntax--regexp {
+  color: #89ddf3;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #ffcb6b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #f07178;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #4f6875;
+}
+.syntax--punctuation.syntax--definition.syntax--array,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--string,
+.syntax--punctuation.syntax--definition.syntax--variable {
+  color: #eeffff;
+}
+.syntax--punctuation.syntax--definition.syntax--array.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--array.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--end {
+  color: #89ddf3;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #82aaff;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #ffe082;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c792ea;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--definition.syntax--entity {
+  color: #89ddf3;
+}
+.syntax--punctuation.syntax--section.syntax--array {
+  color: #89ddf3;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #89ddf3;
+}
+.syntax--punctuation.syntax--separator.syntax--key-value {
+  color: #89ddf3;
+}
+.syntax--punctuation.syntax--terminator {
+  color: #89ddf3;
+}
+.syntax--support.syntax--class {
+  color: #ffcb6b;
+}
+.syntax--support.syntax--function {
+  color: #82aaff;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #82aaff;
+}
+.syntax--support.syntax--type.syntax--property-name {
+  color: #b2ccd6;
+}
+.syntax--support.syntax--variable.syntax--dom {
+  color: #ffcb6b;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #82aaff;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #eeffff;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #c3e88d;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-element {
+  color: #c792ea;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--attribute {
+  color: #c792ea;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #ffcb6b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #82aaff;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #f07178;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #ffcb6b;
+}
+.syntax--meta.syntax--class {
+  color: #ffe082;
+}
+.syntax--meta.syntax--delimiter.syntax--period {
+  color: #89ddf3;
+}
+.syntax--meta.syntax--link {
+  color: #ffcb6b;
+}
+.syntax--meta.syntax--require {
+  color: #82aaff;
+}
+.syntax--meta.syntax--selector {
+  color: #c792ea;
+}
+.syntax--meta.syntax--separator {
+  background-color: #373b41;
+  color: #eeffff;
+}
+.syntax--meta.syntax--brace.syntax--round,
+.syntax--meta.syntax--brace.syntax--square {
+  color: #89ddf3;
+}
+.syntax--none {
+  color: #eeffff;
+}
+.syntax--markup.syntax--bold {
+  color: #ffcb6b;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c792ea;
+}
+.syntax--markup.syntax--deleted {
+  color: #f07178;
+}
+.syntax--markup.syntax--italic {
+  color: #c792ea;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #82aaff;
+}
+.syntax--markup.syntax--inserted {
+  color: #c3e88d;
+}
+.syntax--markup.syntax--list {
+  color: #f07178;
+}
+.syntax--markup.syntax--quote {
+  color: #ffcb6b;
+}
+.syntax--markup.syntax--raw.syntax--inline {
+  color: #c3e88d;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--markup.syntax--heading {
+  color: #c3e88d;
+}
+pre.editor-colors[mini] .scroll-view {
+  padding-left: 1px;
+}
+pre.editor-colors .highlight .region.bracket-matcher {
+  z-index: inherit;
+}
+.bracket-matcher .region {
+  border-bottom: 1px solid #009688;
+  box-sizing: border-box;
+  background-color: rgba(238, 255, 255, 0.1);
+  box-shadow: inset 0 -1px 0 #009688;
+}
+.syntax--css .syntax--support.syntax--constant {
+  color: #89ddf3;
+}
+.syntax--css .syntax--support.syntax--property-name {
+  color: #73d1c8;
+}
+.syntax--css .syntax--keyword.syntax--unit {
+  color: #ffe082;
+}
+.syntax--css .syntax--constant.syntax--color {
+  color: #f78c6a;
+}
+.syntax--css .syntax--constant.syntax--color .syntax--punctuation {
+  color: currentColor;
+}
+.syntax--css .syntax--entity.syntax--tag {
+  color: #b2ccd6;
+}
+.syntax--html .syntax--meta.syntax--tag.syntax--doctype {
+  color: #c792ea;
+}
+.syntax--html .syntax--punctuation.syntax--tag {
+  color: #89ddf3;
+}
+.syntax--js .syntax--constant {
+  color: #eeffff;
+}
+.syntax--js .syntax--support.syntax--variable.syntax--property {
+  color: #eeffff;
+}
+.syntax--js .syntax--entity.syntax--name.syntax--type {
+  color: #ffcb6b;
+}
+.syntax--js .syntax--variable.syntax--property {
+  color: #82aaff;
+}
+.syntax--js .syntax--variable.syntax--other.syntax--object {
+  color: #eeffff;
+}
+.syntax--js .syntax--constant.syntax--numeric {
+  color: #f78c6a;
+}
+.syntax--js .syntax--constant.syntax--boolean {
+  color: #f07178;
+}
+.syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double {
+  color: #c3e88d;
+}
+.syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > * {
+  color: currentColor;
+}
+.syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > *.syntax--punctuation.syntax--begin,
+.syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > *.syntax--punctuation.syntax--end {
+  color: #89ddf3;
+}
+.syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted {
+  color: #c3e88d;
+}
+.syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted * {
+  color: currentColor;
+}
+.syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted *.syntax--punctuation.syntax--begin,
+.syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted *.syntax--punctuation.syntax--end {
+  color: #89ddf3;
+}
+.syntax--json .syntax--meta.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted {
+  color: #c792ea;
+}
+.syntax--json .syntax--meta.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted .syntax--punctuation.syntax--string {
+  color: currentColor;
+}
+.syntax--php .syntax--keyword.syntax--operator.syntax--assignment {
+  color: #c792ea;
+}
+.syntax--php .syntax--meta.syntax--object {
+  color: #82aaff;
+}
+.syntax--php .syntax--meta.syntax--arguments {
+  color: #c792ea;
+}
+.syntax--python .syntax--meta.syntax--function-call {
+  color: #82aaff;
+}
+.syntax--python .syntax--meta.syntax--function-call .syntax--punctuation {
+  color: #89ddf3;
+}
+.syntax--python .syntax--meta.syntax--function-call .syntax--arguments {
+  color: #7986cb;
+}
+.syntax--python .syntax--meta.syntax--function-call .syntax--arguments.syntax--punctuation {
+  color: #89ddf3;
+}
+.syntax--python .syntax--variable.syntax--self {
+  color: #ff5370;
+}
+.syntax--python .syntax--meta .syntax--punctuation.syntax--inheritance,
+.syntax--python .syntax--meta .syntax--punctuation.syntax--section {
+  color: #89ddf3;
+}
+.syntax--python .syntax--variable.syntax--parameter {
+  color: #89ddf3;
+}
+.syntax--python .syntax--keyword.syntax--operator {
+  color: #c792ea;
+}
+.syntax--ruby .syntax--punctuation.syntax--separator {
+  color: #89ddf3;
+}
+.syntax--ruby .syntax--variable.syntax--block {
+  color: #f07178;
+}
+.syntax--ruby .syntax--variable.syntax--instance {
+  color: #f07178;
+}
+.syntax--ruby .syntax--variable.syntax--instance .syntax--punctuation {
+  color: currentColor;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="lesson-11">lesson 11</h1>
+<h3 id="-composition">% Composition</h3>
+<p>  <strong>difference between a compound and a molecule</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>compound:&nbsp;A&nbsp;compound&nbsp;is&nbsp;made&nbsp;of&nbsp;more&nbsp;than&nbsp;one&nbsp;type&nbsp;of&nbsp;element.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;molecule:&nbsp;A&nbsp;molecule&nbsp;is&nbsp;a&nbsp;group&nbsp;of&nbsp;elements&nbsp;that&nbsp;doesn&#39;t&nbsp;have&nbsp;to&nbsp;be&nbsp;the&nbsp;same&nbsp;type</span></span></span></div></pre><p>  <strong>Everything around us is typically made up of more than one element. Some things on this earth are made up of a single substance such as;</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>gold:&nbsp;pure&nbsp;Au,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;hydrogen:&nbsp;H,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;silver:&nbsp;Ag,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Lots&nbsp;of&nbsp;these&nbsp;elements&nbsp;are&nbsp;rare.</span></span></span></div></pre><p>  <strong>Why do most things not exist in our earth as pure substances?</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Like&nbsp;ionic&nbsp;compounds,&nbsp;most&nbsp;stable&nbsp;react&nbsp;together&nbsp;naturally.&nbsp;Different&nbsp;areas&nbsp;on&nbsp;the&nbsp;periodic&nbsp;table&nbsp;are&nbsp;more&nbsp;reactive&nbsp;than&nbsp;others.</span></span></span></div></pre><p>  <strong>What percent of the mass of water is made up of oxygen?</strong></p>
+<blockquote>
+<p><strong>How to find the mass of water?</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Find&nbsp;mass&nbsp;number&nbsp;of&nbsp;hydrogen:&nbsp;1,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Find&nbsp;mass&nbsp;number&nbsp;of&nbsp;oxygen:&nbsp;16,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Oxygen&nbsp;is&nbsp;made&nbsp;up&nbsp;of:&nbsp;(2&nbsp;*&nbsp;H)&nbsp;+&nbsp;(1&nbsp;*&nbsp;O),</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Substitute&nbsp;in&nbsp;values:&nbsp;(2&nbsp;*&nbsp;1)&nbsp;+&nbsp;(1&nbsp;*&nbsp;16),</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Mass&nbsp;of&nbsp;water:&nbsp;(2&nbsp;+&nbsp;16),</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Mass&nbsp;of&nbsp;water:&nbsp;(18)</span></span></span></div></pre><p><strong>Finding % composition of oxygen in water</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>(Mass&nbsp;of&nbsp;oxygen&nbsp;/&nbsp;Mass&nbsp;of&nbsp;water)&nbsp;*&nbsp;100,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>example:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>%O:&nbsp;(16&nbsp;/&nbsp;18)&nbsp;*&nbsp;100</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>%O:&nbsp;(0.8889)&nbsp;*&nbsp;100</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>%O:&nbsp;88.89%&nbsp;Oxygen</span></span></span></div></pre><p><strong>Finding % composition of grams of a substance</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>example:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>72g&nbsp;of&nbsp;hydrocarbon&nbsp;has&nbsp;12g&nbsp;of&nbsp;hydrogen.&nbsp;What&nbsp;is&nbsp;%&nbsp;of&nbsp;carbon?</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Carbon:&nbsp;60g,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Hydrogen:&nbsp;12g,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Molar&nbsp;mass&nbsp;of&nbsp;carbon:&nbsp;12,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Molar&nbsp;mass&nbsp;of&nbsp;hydrogen:&nbsp;1,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Number&nbsp;of&nbsp;moles&nbsp;of&nbsp;carbon:&nbsp;60g&nbsp;/&nbsp;12amu&nbsp;=&nbsp;5&nbsp;moles&nbsp;of&nbsp;carbon,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Number&nbsp;of&nbsp;moles&nbsp;of&nbsp;hydrogen:&nbsp;12g&nbsp;/&nbsp;1amu&nbsp;=&nbsp;12&nbsp;moles&nbsp;of&nbsp;hydrogen,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>%C:&nbsp;(5&nbsp;/&nbsp;(5&nbsp;+&nbsp;12))&nbsp;*&nbsp;100</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>%C:&nbsp;(5&nbsp;/&nbsp;17)&nbsp;*&nbsp;100</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>%C:&nbsp;29%</span></span></span></div></pre></blockquote>
+<p><strong>Emperical vs Molecular formula</strong></p>
+<blockquote>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Molecular&nbsp;formula:&nbsp;Shows&nbsp;the&nbsp;actual&nbsp;number&nbsp;of&nbsp;each&nbsp;atom&nbsp;within&nbsp;a&nbsp;molecule.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>example:&nbsp;C2H4</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Emperical&nbsp;formula:&nbsp;smallest&nbsp;whole&nbsp;number&nbsp;ratio&nbsp;of&nbsp;each&nbsp;atom&nbsp;within&nbsp;a&nbsp;compound.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>example:&nbsp;CH2</span></span></span></div></pre><p><strong>Finding emperical from molecular</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>You&nbsp;have&nbsp;to&nbsp;find&nbsp;the&nbsp;number&nbsp;of&nbsp;each&nbsp;atom&nbsp;then&nbsp;find&nbsp;the&nbsp;lowest&nbsp;ratio&nbsp;of&nbsp;the&nbsp;atoms.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>example;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Mg3Cl6</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Mg:&nbsp;3,&nbsp;Cl:&nbsp;6.&nbsp;&lt;--&nbsp;find&nbsp;the&nbsp;amount&nbsp;of&nbsp;each&nbsp;atom</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1&nbsp;:&nbsp;2&lt;--&nbsp;find&nbsp;lowest&nbsp;ratio</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>MgCl2&nbsp;&lt;--&nbsp;change&nbsp;name&nbsp;&nbsp;to&nbsp;match</span></span></span></div></pre></blockquote>
+<hr>
+<h1 id="lesson-12">Lesson 12</h1>
+<h3 id="doing-the-magnesium-prac-we-have-to-burn-magnesium-to-create-magnesium-oxide-mgo-">Doing the magnesium prac. We have to burn magnesium to create magnesium oxide: MgO;</h3>
+<h5 id="what-could-affect-the-purity-of-our-compound-in-this-experiment-">What could affect the purity of our compound in this experiment?</h5>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1.&nbsp;There&nbsp;are&nbsp;more&nbsp;elements&nbsp;than&nbsp;just&nbsp;oxygen&nbsp;in&nbsp;the&nbsp;surrounding&nbsp;air.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>2.&nbsp;Nitrogen&nbsp;will&nbsp;also&nbsp;react&nbsp;with&nbsp;magnesium&nbsp;and&nbsp;compete&nbsp;to&nbsp;make&nbsp;magnesium&nbsp;Nitride&nbsp;instead&nbsp;of&nbsp;magnesium&nbsp;oxide.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>3.&nbsp;The&nbsp;masses&nbsp;we&nbsp;get&nbsp;from&nbsp;the&nbsp;balances&nbsp;could&nbsp;cause&nbsp;systematic&nbsp;errors</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>4.&nbsp;Human&nbsp;errors;&nbsp;table&nbsp;bumps,&nbsp;fuckin&nbsp;bad&nbsp;measurements&nbsp;etc.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>5.&nbsp;Some&nbsp;of&nbsp;the&nbsp;magnesium&nbsp;might&nbsp;not&nbsp;react&nbsp;and&nbsp;leave&nbsp;some&nbsp;sort&nbsp;of&nbsp;residue.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>6.&nbsp;Some&nbsp;of&nbsp;the&nbsp;magnesium&nbsp;may&nbsp;have&nbsp;already&nbsp;reacted&nbsp;with&nbsp;the&nbsp;air.&nbsp;We&nbsp;need&nbsp;to&nbsp;rub&nbsp;this&nbsp;magnesium&nbsp;oxide&nbsp;off.</span></span></span></div></pre><hr>
+<h1 id="lesson-13">lesson 13</h1>
+<h4 id="empirical-formula-simplest-whole-number-of-atoms-">Empirical Formula (simplest whole number of atoms)</h4>
+<p><strong>How to find Emperical formula from % of atoms</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>42.9%&nbsp;C&nbsp;==&nbsp;57.1%&nbsp;O;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>assumed&nbsp;100g;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>42.9g&nbsp;C,&nbsp;57.1g&nbsp;O;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>n&nbsp;=&nbsp;m/Me:&nbsp;Divide&nbsp;these&nbsp;numbers&nbsp;by&nbsp;their&nbsp;respective&nbsp;molar&nbsp;mass;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>example:&nbsp;&nbsp;42.9&nbsp;/&nbsp;C&nbsp;--&gt;&nbsp;42.9&nbsp;/&nbsp;12&nbsp;--&gt;&nbsp;3.57</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>example:&nbsp;57.1&nbsp;/&nbsp;O&nbsp;--&gt;&nbsp;57.1&nbsp;/&nbsp;16&nbsp;--&gt;&nbsp;3.57</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>to&nbsp;find&nbsp;the&nbsp;ration&nbsp;divide&nbsp;the&nbsp;number&nbsp;by&nbsp;the&nbsp;smallest&nbsp;number:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>3.57&nbsp;/&nbsp;3.57&nbsp;--&gt;&nbsp;1&nbsp;--&gt;&nbsp;ration&nbsp;=&nbsp;1:1;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>So&nbsp;now&nbsp;u&nbsp;have&nbsp;the&nbsp;ratio&nbsp;and&nbsp;u&nbsp;just&nbsp;apply&nbsp;it&nbsp;to&nbsp;the&nbsp;formula:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>CO&nbsp;=&nbsp;CO;</span></span></span></div></pre><p><strong>example 2</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>9.6g&nbsp;C,&nbsp;0.67g&nbsp;H,&nbsp;4.7g&nbsp;Cl;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>9.6&nbsp;/&nbsp;12&nbsp;=&nbsp;0.8,&nbsp;0.61&nbsp;/&nbsp;1&nbsp;=&nbsp;0.67,&nbsp;4.7&nbsp;/&nbsp;35.5&nbsp;=&nbsp;0.13;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>0.8/0.13&nbsp;=&nbsp;6,&nbsp;0.67/0.13&nbsp;=&nbsp;5,&nbsp;0.13/0.13&nbsp;=&nbsp;1;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>ratio&nbsp;=&nbsp;6:5:1</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>C6H5Cl</span></span></span></div></pre><p><strong>What if i get 2.5 of an atom</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>If&nbsp;you&nbsp;get&nbsp;2.5&nbsp;of&nbsp;an&nbsp;atom&nbsp;then&nbsp;multiply&nbsp;by&nbsp;2.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>example:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>82.75&nbsp;C&nbsp;/&nbsp;12&nbsp;=&nbsp;6.89</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;17.25&nbsp;H&nbsp;/&nbsp;1&nbsp;=&nbsp;17.25</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>16.25&nbsp;/&nbsp;6.98&nbsp;=&nbsp;2.5</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;ratio&nbsp;=&nbsp;1&nbsp;:&nbsp;2.5&nbsp;&nbsp;--&gt;&nbsp;*&nbsp;2</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;ratio&nbsp;=&nbsp;2&nbsp;:&nbsp;5</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;C2H5</span></span></span></div></pre><hr>
+<h2 id="lesson-14">Lesson 14</h2>
+<h4 id="molecular-formula">molecular formula</h4>
+<p><strong>What is molecular formula</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Molecular&nbsp;formula&nbsp;is&nbsp;the&nbsp;actual&nbsp;formula&nbsp;of&nbsp;the&nbsp;compound.&nbsp;The&nbsp;empirical</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>formula&nbsp;just&nbsp;gives&nbsp;us&nbsp;a&nbsp;ration&nbsp;of&nbsp;atoms&nbsp;whilst&nbsp;the&nbsp;molecular&nbsp;Shows&nbsp;us</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>exactly&nbsp;how&nbsp;many&nbsp;atoms&nbsp;there&nbsp;are.</span></span></span></div></pre><p><strong>Empirical ---&gt; Molecular</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Empirical&nbsp;formula&nbsp;is&nbsp;a&nbsp;ratio&nbsp;of&nbsp;atoms.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>HO&nbsp;---&gt;&nbsp;H2O2</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>It&nbsp;is&nbsp;also&nbsp;a&nbsp;ratio&nbsp;of&nbsp;mass</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>17&nbsp;---&gt;&nbsp;34</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>You&nbsp;can&nbsp;see&nbsp;that&nbsp;the&nbsp;molar&nbsp;mass&nbsp;of&nbsp;H2O2&nbsp;is&nbsp;double&nbsp;the&nbsp;molar&nbsp;mass&nbsp;of&nbsp;HO&nbsp;because&nbsp;it&nbsp;is&nbsp;a&nbsp;ratio</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;ratio&nbsp;of&nbsp;the&nbsp;atoms&nbsp;=&nbsp;34/17&nbsp;=&nbsp;2</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Mass&nbsp;of&nbsp;empirical&nbsp;formula&nbsp;*&nbsp;ratio&nbsp;=&nbsp;Mass&nbsp;of&nbsp;molecular&nbsp;formula</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Mass&nbsp;of&nbsp;molecular&nbsp;formula&nbsp;/&nbsp;Mass&nbsp;of&nbsp;empirical&nbsp;formula&nbsp;=&nbsp;ratio</span></span></span></div></pre><hr>
+<h2 id="lesson-15">Lesson 15</h2>
+<p><strong>Quantifying solutions</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>When&nbsp;we&nbsp;get&nbsp;an&nbsp;error&nbsp;we&nbsp;should&nbsp;be&nbsp;able&nbsp;to&nbsp;figure&nbsp;out&nbsp;how&nbsp;much&nbsp;they&nbsp;affected&nbsp;the&nbsp;data.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>We&nbsp;must&nbsp;quantify&nbsp;the&nbsp;errors.</span></span></span></div></pre><p><strong>Revision for Formulae of units</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Questions&nbsp;+&nbsp;Answers:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1.&nbsp;The&nbsp;mole&nbsp;concept&nbsp;enables&nbsp;us&nbsp;to&nbsp;&#39;count&#39;&nbsp;particles&nbsp;present&nbsp;in&nbsp;a&nbsp;quantity&nbsp;of&nbsp;a&nbsp;substance.&nbsp;what&nbsp;unit&nbsp;measures&nbsp;the&nbsp;amount&nbsp;of&nbsp;a&nbsp;substance?:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Mole&nbsp;(mol)</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>2.&nbsp;How&nbsp;many&nbsp;particles&nbsp;are&nbsp;in&nbsp;a&nbsp;mole?</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>3.06&nbsp;×&nbsp;10^23</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>3.&nbsp;Molar&nbsp;mass&nbsp;is&nbsp;represented&nbsp;by&nbsp;M,&nbsp;what&nbsp;units&nbsp;is&nbsp;it&nbsp;expressed&nbsp;in?</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>grams/mol</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>4.&nbsp;What&nbsp;formula&nbsp;helps&nbsp;determine&nbsp;the&nbsp;number&nbsp;of&nbsp;particles&nbsp;in&nbsp;a&nbsp;sample?</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Molar&nbsp;mass&nbsp;×&nbsp;mass&nbsp;×&nbsp;mol</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>5.&nbsp;The&nbsp;difference&nbsp;between&nbsp;the&nbsp;relative&nbsp;molecular&nbsp;mass&nbsp;M,&nbsp;of&nbsp;carbon&nbsp;dioxide&nbsp;and&nbsp;the&nbsp;molar&nbsp;mass&nbsp;of&nbsp;carbon&nbsp;dioxide</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>is&nbsp;that&nbsp;the&nbsp;relative&nbsp;molecular&nbsp;mass&nbsp;and&nbsp;the&nbsp;molar&nbsp;mass&nbsp;of&nbsp;carbon&nbsp;dioxide&nbsp;are&nbsp;respectively:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>A.&nbsp;44.0g&nbsp;and&nbsp;1&nbsp;mol</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;B.&nbsp;44.0&nbsp;and&nbsp;44.0g/mol&nbsp;&nbsp;&nbsp;&lt;---&nbsp;This&nbsp;one.&nbsp;RAM&nbsp;does&nbsp;not&nbsp;HAVE&nbsp;to&nbsp;have&nbsp;a&nbsp;unit&nbsp;following&nbsp;it&nbsp;[although&nbsp;you&nbsp;can&nbsp;use&nbsp;amu]</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;C.&nbsp;44.0g&nbsp;and&nbsp;44.0g/mol</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;D.&nbsp;44.0&nbsp;and&nbsp;44.0g</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>6.&nbsp;The&nbsp;smallest&nbsp;number&nbsp;of&nbsp;molecules&nbsp;would&nbsp;be&nbsp;contained&nbsp;in:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>A.&nbsp;1.0g&nbsp;of&nbsp;N2</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;B.&nbsp;1.0g&nbsp;of&nbsp;O2</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;C.&nbsp;1.0g&nbsp;of&nbsp;NO</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;D.&nbsp;1.0g&nbsp;of&nbsp;NO2&nbsp;&lt;---&nbsp;This&nbsp;one.&nbsp;Calculate&nbsp;Molecular&nbsp;mass&nbsp;of&nbsp;each&nbsp;one,&nbsp;Molar&nbsp;mass&nbsp;=&nbsp;Mass&nbsp;/&nbsp;Molecular&nbsp;Mass</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>7.&nbsp;Polymers&nbsp;made&nbsp;from&nbsp;three&nbsp;monomers&nbsp;acrylic&nbsp;acid,&nbsp;C3H4O2,&nbsp;methyl&nbsp;acrylate&nbsp;C4H6O2&nbsp;and&nbsp;acrylonitrile,&nbsp;C3H3N.&nbsp;The&nbsp;order&nbsp;of&nbsp;increasing&nbsp;percentage&nbsp;carbon&nbsp;content&nbsp;of&nbsp;these&nbsp;monomers&nbsp;is:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Acrylic&nbsp;acid,&nbsp;methyl&nbsp;acrylate,&nbsp;acrylonitrile.</span></span></span></div></pre><p><strong>Revision for empirical and Molecular Formulae</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1.&nbsp;How&nbsp;is&nbsp;empirical&nbsp;formula&nbsp;different&nbsp;to&nbsp;the&nbsp;molecular&nbsp;formula:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;empirical&nbsp;formula&nbsp;shows&nbsp;the&nbsp;ratio&nbsp;of&nbsp;atoms.</span></span></span></div></pre><h2 id="lesson-16">Lesson 16</h2>
+<p><strong>Bhors theory of shells</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;idea&nbsp;is&nbsp;that&nbsp;electrons&nbsp;are&nbsp;arranged&nbsp;into&nbsp;shells&nbsp;aka;&nbsp;clouds,&nbsp;energy&nbsp;levels,&nbsp;layers&nbsp;or&nbsp;rings.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;They&nbsp;arranged&nbsp;according&nbsp;to&nbsp;energy&nbsp;levels.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;first&nbsp;shell&nbsp;is&nbsp;the&nbsp;&#39;s&#39;&nbsp;shell.&nbsp;it&nbsp;can&nbsp;hold&nbsp;2&nbsp;electrons.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;The&nbsp;second&nbsp;shell&nbsp;is&nbsp;the&nbsp;&#39;p&#39;&nbsp;shell.&nbsp;it&nbsp;can&nbsp;hold&nbsp;6&nbsp;electrons.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;The&nbsp;third&nbsp;shell&nbsp;is&nbsp;the&nbsp;&#39;d&#39;&nbsp;shell.&nbsp;It&nbsp;can&nbsp;hold&nbsp;10&nbsp;electrons.</span></span></span></div></pre><hr>
+<h2 id="lesson-17">Lesson 17</h2>
+<p><strong>The amazing things about the periodic table</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Just&nbsp;by&nbsp;looking&nbsp;at&nbsp;the&nbsp;periodic&nbsp;table&nbsp;you&nbsp;can&nbsp;learn&nbsp;a&nbsp;lot&nbsp;of&nbsp;different&nbsp;things&nbsp;such&nbsp;as:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Shells:&nbsp;You&nbsp;can&nbsp;see&nbsp;which&nbsp;shell&nbsp;the&nbsp;element&nbsp;is&nbsp;in&nbsp;by&nbsp;counting&nbsp;the&nbsp;number&nbsp;of&nbsp;groups.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Electrons:&nbsp;You&nbsp;can&nbsp;see&nbsp;how&nbsp;many&nbsp;electrons&nbsp;are&nbsp;in&nbsp;all&nbsp;elements&nbsp;except&nbsp;the&nbsp;transition&nbsp;metals&nbsp;by&nbsp;counting&nbsp;the&nbsp;number&nbsp;of&nbsp;periods.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Valence&nbsp;electrons:&nbsp;You&nbsp;can&nbsp;see&nbsp;the&nbsp;amount&nbsp;of&nbsp;valence&nbsp;electrons&nbsp;by&nbsp;the&nbsp;charge&nbsp;of&nbsp;the&nbsp;period.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Charge&nbsp;of&nbsp;element:&nbsp;You&nbsp;can&nbsp;find&nbsp;the&nbsp;charge&nbsp;of&nbsp;the&nbsp;element&nbsp;by&nbsp;adding&nbsp;numbers&nbsp;a&nbsp;the&nbsp;top.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Judge&nbsp;the&nbsp;reactivity:&nbsp;You&nbsp;can&nbsp;judge&nbsp;the&nbsp;reactivity&nbsp;of&nbsp;an&nbsp;element&nbsp;by&nbsp;where&nbsp;it&nbsp;is&nbsp;positioned&nbsp;on&nbsp;the&nbsp;table.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Electronegativity:&nbsp;You&nbsp;can&nbsp;judge&nbsp;the&nbsp;Electronegativity&nbsp;of&nbsp;an&nbsp;element&nbsp;by&nbsp;where&nbsp;it&nbsp;is&nbsp;on&nbsp;the&nbsp;periodic&nbsp;Table.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;type&nbsp;of&nbsp;shell&nbsp;its&nbsp;in:&nbsp;You&nbsp;can&nbsp;tell&nbsp;the&nbsp;number&nbsp;of&nbsp;electrons&nbsp;it&nbsp;can&nbsp;hold&nbsp;in&nbsp;its&nbsp;outer&nbsp;shell&nbsp;it&nbsp;is&nbsp;positioned&nbsp;in.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Number&nbsp;of&nbsp;valence&nbsp;electrons:&nbsp;The&nbsp;group&nbsp;number&nbsp;tells&nbsp;us&nbsp;the&nbsp;amount&nbsp;of&nbsp;valence&nbsp;electrons&nbsp;in&nbsp;valence&nbsp;shell.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;mass&nbsp;number:&nbsp;You&nbsp;can&nbsp;tell&nbsp;the&nbsp;mass&nbsp;number&nbsp;by&nbsp;the&nbsp;element&nbsp;symbol.</span></span></span></div></pre><p><img src="http://www.compoundchem.com/wp-content/uploads/2014/02/Periodicity-Periodic-Table-Trends.png" alt="link"></p>
+<p><strong>Trends on the periodic table</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Atomic&nbsp;radius&nbsp;trend:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;atomic&nbsp;radius&nbsp;is&nbsp;the&nbsp;distance&nbsp;between&nbsp;the&nbsp;nucleus&nbsp;of&nbsp;two&nbsp;atoms.&nbsp;This&nbsp;distance&nbsp;is&nbsp;measured&nbsp;in&nbsp;pico-meters.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;Atomic&nbsp;radius&nbsp;increases&nbsp;from&nbsp;left&nbsp;to&nbsp;right&nbsp;and&nbsp;up&nbsp;to&nbsp;down.&nbsp;This&nbsp;means&nbsp;the&nbsp;elements&nbsp;with&nbsp;the&nbsp;largest&nbsp;atomic&nbsp;radius&nbsp;are&nbsp;in&nbsp;the&nbsp;bottom&nbsp;left&nbsp;corner.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;Basically&nbsp;as&nbsp;you&nbsp;go&nbsp;down&nbsp;the&nbsp;amount&nbsp;of&nbsp;shells&nbsp;increases&nbsp;to&nbsp;the&nbsp;radius&nbsp;increases.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;As&nbsp;you&nbsp;go&nbsp;right&nbsp;the&nbsp;amount&nbsp;of&nbsp;electrons&nbsp;increases&nbsp;pulling&nbsp;force&nbsp;between&nbsp;the&nbsp;electrons&nbsp;and&nbsp;protons&nbsp;meaning&nbsp;the&nbsp;atom&nbsp;shrinks&nbsp;a&nbsp;little.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Melting&nbsp;point:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Metallically&nbsp;bonded&nbsp;and&nbsp;macromolecular&nbsp;substances&nbsp;have&nbsp;high&nbsp;melting&nbsp;points&nbsp;because&nbsp;there&nbsp;is&nbsp;more&nbsp;energy&nbsp;needed&nbsp;to&nbsp;break&nbsp;their&nbsp;bonds.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;Most&nbsp;non-metal&nbsp;have&nbsp;a&nbsp;simple&nbsp;molecular&nbsp;structure&nbsp;and&nbsp;are&nbsp;easy&nbsp;to&nbsp;break&nbsp;the&nbsp;bonds.&nbsp;The&nbsp;strength&nbsp;of&nbsp;the&nbsp;molecular&nbsp;bonds&nbsp;is&nbsp;determined&nbsp;by&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;molecule.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Electronegativity:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Electronegativity&nbsp;is&nbsp;a&nbsp;measure&nbsp;of&nbsp;tendency&nbsp;of&nbsp;an&nbsp;atom&nbsp;to&nbsp;attract&nbsp;a&nbsp;bonding&nbsp;pair&nbsp;of&nbsp;electrons.&nbsp;The&nbsp;Electronegativity&nbsp;increases&nbsp;from&nbsp;bottom&nbsp;left&nbsp;to&nbsp;top&nbsp;right.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;The&nbsp;increase&nbsp;in&nbsp;Electronegativity&nbsp;is&nbsp;because&nbsp;the&nbsp;nuclear&nbsp;charge&nbsp;of&nbsp;the&nbsp;atom&nbsp;becomes&nbsp;increasingly&nbsp;positive&nbsp;and&nbsp;the&nbsp;constant&nbsp;shielding&nbsp;effects&nbsp;result&nbsp;in&nbsp;greater&nbsp;attractive&nbsp;forces</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Ionization&nbsp;energy:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;ionization&nbsp;energy&nbsp;generally&nbsp;increases&nbsp;from&nbsp;left&nbsp;to&nbsp;right.&nbsp;Electrons&nbsp;in&nbsp;p&nbsp;orbitals&nbsp;are&nbsp;easier&nbsp;to&nbsp;remove&nbsp;than&nbsp;those&nbsp;in&nbsp;s&nbsp;orbitals&nbsp;of&nbsp;the&nbsp;same&nbsp;energy&nbsp;level.&nbsp;If&nbsp;a&nbsp;paired&nbsp;electron&nbsp;is&nbsp;in&nbsp;the&nbsp;same&nbsp;orbital&nbsp;it&nbsp;can&nbsp;lead&nbsp;to&nbsp;repulsion.</span></span></span></div></pre><p><strong>Needed equations</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Avagadro&#39;s&nbsp;constant&nbsp;(NA):&nbsp;6.02&nbsp;×&nbsp;10^23&nbsp;mol</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Charge&nbsp;on&nbsp;one&nbsp;electron:&nbsp;-1.60&nbsp;×&nbsp;10^-19</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Faraday&nbsp;constant&nbsp;(F):&nbsp;96,500&nbsp;C&nbsp;mol</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Gas&nbsp;constant(R):&nbsp;8.31&nbsp;J&nbsp;K&nbsp;mol</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Ionic&nbsp;product&nbsp;for&nbsp;water&nbsp;(Kw):&nbsp;1&nbsp;×&nbsp;10^-14&nbsp;mol^2&nbsp;L^-2&nbsp;at&nbsp;298&nbsp;K</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Specific&nbsp;heat&nbsp;capacity&nbsp;(c)&nbsp;of&nbsp;water:&nbsp;4.18&nbsp;J/g&nbsp;K</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Density&nbsp;(d)&nbsp;of&nbsp;water&nbsp;at&nbsp;25C:&nbsp;1.00&nbsp;g&nbsp;/&nbsp;mL</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>0&nbsp;C&nbsp;:&nbsp;273&nbsp;K</span></span></span></div></pre><p><strong>Shielding effect</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;electrons&nbsp;on&nbsp;the&nbsp;outer&nbsp;shell&nbsp;are&nbsp;easier&nbsp;to&nbsp;be&nbsp;taken&nbsp;away&nbsp;because&nbsp;their&nbsp;are&nbsp;electrons&nbsp;shielding&nbsp;the&nbsp;magnetism&nbsp;to&nbsp;them.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Shielding&nbsp;happens&nbsp;because&nbsp;the&nbsp;inside&nbsp;electrons&nbsp;are&nbsp;standing&nbsp;in&nbsp;the&nbsp;way&nbsp;of&nbsp;the&nbsp;outside&nbsp;(valence)&nbsp;electrons.</span></span></span></div></pre><hr>
+<h2 id="lesson-18">Lesson 18</h2>
+<p><strong>Bhor&#39;s Shells</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Shells&nbsp;=&nbsp;layers&nbsp;of&nbsp;electrons;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Different&nbsp;energy&nbsp;levels&nbsp;in&nbsp;each&nbsp;shell;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;Closer&nbsp;shells&nbsp;have&nbsp;higher&nbsp;energy&nbsp;levels;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Evidence&nbsp;for&nbsp;this?</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Emission&nbsp;light&nbsp;spectra;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;Heat&nbsp;a&nbsp;chemical.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;When&nbsp;Atoms&nbsp;are&nbsp;heated&nbsp;their&nbsp;electrons&nbsp;will&nbsp;rapidly&nbsp;change&nbsp;energy&nbsp;levels&nbsp;/&nbsp;shells.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;When&nbsp;the&nbsp;electrons&nbsp;fall&nbsp;back&nbsp;they&nbsp;release&nbsp;energy&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;light.</span></span></span></div></pre><pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Ground&nbsp;state:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>When&nbsp;an&nbsp;electron&nbsp;is&nbsp;in&nbsp;its&nbsp;lowest&nbsp;energy&nbsp;level&nbsp;it&nbsp;is&nbsp;in&nbsp;its&nbsp;ground&nbsp;state.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;So&nbsp;it&nbsp;is&nbsp;in&nbsp;its&nbsp;ground&nbsp;state&nbsp;when&nbsp;it&nbsp;is&nbsp;nearest&nbsp;to&nbsp;the&nbsp;nucleus.</span></span></span></div></pre><p><img src="http://cdn1.askiitians.com/Images/20141125-101640114-9354-Bohr_atom_animation.gif" alt="link"></p>
+<p><strong>Shell types</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Shell #</th>
+<th style="text-align:left">Shell Name</th>
+<th style="text-align:left"># of electrons</th>
+<th style="text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">K</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">L</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">M</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Only for first 20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bhors model is shit</strong></p>
+<h2 id="-shrongdongers-model-"><strong>SHRONGDONGERS MODEL!</strong></h2>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>There&nbsp;are&nbsp;smaller&nbsp;regions&nbsp;of&nbsp;space&nbsp;than&nbsp;shells.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;Subshells</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Then&nbsp;even&nbsp;smaller&nbsp;than&nbsp;subshells&nbsp;we&nbsp;have.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>-&gt;&nbsp;orbitals</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Like&nbsp;orbitals&nbsp;we&nbsp;fill&nbsp;the&nbsp;lowest&nbsp;energy&nbsp;space&nbsp;first.&nbsp;In&nbsp;this&nbsp;case;&nbsp;The&nbsp;orbitals&nbsp;and&nbsp;then&nbsp;the&nbsp;subshells&nbsp;and&nbsp;then&nbsp;the&nbsp;shells.</span></span></span></div></pre><p><strong>The Periodic Table in terms of orbitals</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Shell #</th>
+<th style="text-align:left"># of Subshells</th>
+<th style="text-align:left">Name of subshells</th>
+<th style="text-align:left"># of orbital in subshell</th>
+<th style="text-align:left">Max electrons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">s</td>
+<td style="text-align:left">s=1;</td>
+<td style="text-align:left">2×1 = 2</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">s+p</td>
+<td style="text-align:left">s=1; p=3; 4</td>
+<td style="text-align:left">4×2 = 8</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">s+p</td>
+<td style="text-align:left">s=1; p=3; 4</td>
+<td style="text-align:left">4×2 = 8</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">s+p+d</td>
+<td style="text-align:left">s=1; p=3; d=5; 9</td>
+<td style="text-align:left">9×2 = 18</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">s+p+d</td>
+<td style="text-align:left">s=1; p=3; d=5; 9</td>
+<td style="text-align:left">9×2 = 18</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">s+p+d</td>
+<td style="text-align:left">s=1; p=3; d=5; 9</td>
+<td style="text-align:left">9×2 = 18</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">s+p+d+f</td>
+<td style="text-align:left">s=1; p=3; d=5; f=7; 16</td>
+<td style="text-align:left">16×2 = 32</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">s+p+d+f</td>
+<td style="text-align:left">s=1; p=3; d=5; f=7; 16</td>
+<td style="text-align:left">16×2 = 32</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://ch301.cm.utexas.edu/images/orbital-blocks.png" alt="link"></p>
+<p><strong>Filling electron shells</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Fill&nbsp;the&nbsp;lowest&nbsp;level&nbsp;electrons&nbsp;first</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Fill&nbsp;it&nbsp;like&nbsp;a&nbsp;bucket;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s1,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s1,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p1,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p2,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p3,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p4,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>...</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p1,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p2,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>...</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;3d1,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;3d2,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;3d3,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>...</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;3d10&nbsp;4p1,</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;3d10&nbsp;4p2,</span></span></span></div></pre><p><strong>Example:</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;11-Na</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>-&gt;&nbsp;1s2&nbsp;2s2&nbsp;2p6&nbsp;3s1</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;1-H</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>-&gt;&nbsp;1s1</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;15-P</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>-&gt;&nbsp;1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p5</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;26-Fe</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>-&gt;&nbsp;1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;3d6</span></span></span></div></pre><hr>
+<h2 id="lesson-20">Lesson 20</h2>
+<p><strong>What is meant by ground state and excited state?</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>To&nbsp;show&nbsp;ground&nbsp;state&nbsp;and&nbsp;excited&nbsp;state&nbsp;we&nbsp;can&nbsp;use&nbsp;the&nbsp;flame&nbsp;test;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;With&nbsp;the&nbsp;flame&nbsp;test&nbsp;we&nbsp;put&nbsp;different&nbsp;substances&nbsp;into&nbsp;a&nbsp;flame&nbsp;and&nbsp;then&nbsp;observe&nbsp;the&nbsp;color&nbsp;of&nbsp;the&nbsp;flame.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;In&nbsp;a&nbsp;flame&nbsp;test&nbsp;the&nbsp;electrons&nbsp;in&nbsp;the&nbsp;substance&nbsp;are&nbsp;going&nbsp;from&nbsp;their&nbsp;ground&nbsp;state&nbsp;to&nbsp;their&nbsp;excited&nbsp;state&nbsp;and&nbsp;back&nbsp;to&nbsp;ground&nbsp;again.</span></span></span></div></pre><p><strong>flame test</strong>
+<img src="http://www.compoundchem.com/wp-content/uploads/2014/02/Metal-Ion-Flame-Tests.png" alt="link"></p>
+<p><strong>Example</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Na&nbsp;=&nbsp;1s2&nbsp;2s2&nbsp;2p6&nbsp;3s1</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>When&nbsp;you&nbsp;heat&nbsp;up&nbsp;/&nbsp;excite&nbsp;the&nbsp;electrons&nbsp;in&nbsp;Na,&nbsp;the&nbsp;shrongdonger&nbsp;model&nbsp;could&nbsp;become:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Na&nbsp;=&nbsp;1s2&nbsp;2s2&nbsp;2p5&nbsp;3s2</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>As&nbsp;you&nbsp;can&nbsp;see&nbsp;the&nbsp;2p&nbsp;subshell&nbsp;lost&nbsp;1&nbsp;electron&nbsp;and&nbsp;the&nbsp;3s&nbsp;subshell&nbsp;gained&nbsp;an&nbsp;electron.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>If&nbsp;an&nbsp;atom&#39;s&nbsp;shrongdonger&nbsp;model&nbsp;has&nbsp;an&nbsp;electron&nbsp;missing&nbsp;in&nbsp;one&nbsp;shell&nbsp;and&nbsp;an&nbsp;extra&nbsp;in&nbsp;another&nbsp;then&nbsp;it&nbsp;is&nbsp;in&nbsp;its&nbsp;excited&nbsp;state.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>When&nbsp;an&nbsp;electron&nbsp;goes&nbsp;back&nbsp;into&nbsp;the&nbsp;ground&nbsp;state&nbsp;it&nbsp;fills&nbsp;up&nbsp;the&nbsp;shell&nbsp;that&nbsp;is&nbsp;missing&nbsp;the&nbsp;electron.</span></span></span></div></pre><p><strong>Looks like this</strong></p>
+<p><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Ground state &amp; Excited.gif" alt="alt"></p>
+<p><strong>Ions in the shrongdonger model</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>If&nbsp;you&nbsp;have&nbsp;an&nbsp;ion&nbsp;in&nbsp;the&nbsp;electron&nbsp;configuration;&nbsp;e.g.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Mg&nbsp;=&nbsp;1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Mg&nbsp;2+&nbsp;=&nbsp;1s2&nbsp;2s2&nbsp;2p6</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>When&nbsp;you&nbsp;have&nbsp;a&nbsp;positive&nbsp;ion,&nbsp;it&nbsp;means&nbsp;that&nbsp;the&nbsp;atom&nbsp;has&nbsp;lost&nbsp;electrons.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>In&nbsp;this&nbsp;case&nbsp;the&nbsp;magnesium&nbsp;has&nbsp;lost&nbsp;2&nbsp;electrons.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>So&nbsp;when&nbsp;you&nbsp;write&nbsp;the&nbsp;electron&nbsp;configuration&nbsp;you&nbsp;have&nbsp;to&nbsp;remove&nbsp;2&nbsp;electrons&nbsp;from&nbsp;it.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Because&nbsp;of&nbsp;this&nbsp;if&nbsp;you&nbsp;can&nbsp;only&nbsp;see&nbsp;the&nbsp;electron&nbsp;configuration&nbsp;you&nbsp;cannot&nbsp;tell&nbsp;whether&nbsp;it&nbsp;is&nbsp;an&nbsp;atom&nbsp;or&nbsp;an&nbsp;ion.</span></span></span></div></pre><p><strong>Identifying Excited State</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>If&nbsp;an&nbsp;element&#39;s&nbsp;inner&nbsp;shell&nbsp;is&nbsp;not&nbsp;filled&nbsp;up&nbsp;and&nbsp;the&nbsp;outer&nbsp;shell&nbsp;is&nbsp;more&nbsp;filled&nbsp;up&nbsp;then&nbsp;it&nbsp;has&nbsp;excited&nbsp;electrons.</span></span></span></div></pre><hr>
+<h2 id="lesson-21">Lesson 21</h2>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Example&nbsp;question:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;3d6</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;--&gt;&nbsp;1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s1&nbsp;3d1&nbsp;[excited&nbsp;state]</span></span></span></div></pre><p><strong>Weird textbook thing:</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Sometimes&nbsp;textbooks&nbsp;write&nbsp;the&nbsp;d&nbsp;shell&nbsp;before&nbsp;the&nbsp;next&nbsp;s&nbsp;shell.&nbsp;This&nbsp;makes&nbsp;it&nbsp;confusing&nbsp;to&nbsp;find&nbsp;the&nbsp;shell.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>for&nbsp;example:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;3d6&nbsp;4s2&nbsp;===&nbsp;1s2&nbsp;2s2&nbsp;2p6&nbsp;3s2&nbsp;3p6&nbsp;4s2&nbsp;3d6</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>if&nbsp;you&nbsp;see&nbsp;it&nbsp;like&nbsp;this&nbsp;then&nbsp;it&nbsp;is&nbsp;usually&nbsp;best&nbsp;to&nbsp;just&nbsp;change&nbsp;it&nbsp;back&nbsp;to&nbsp;the&nbsp;way&nbsp;ur&nbsp;used&nbsp;to.</span></span></span></div></pre><p><strong>Core Charge</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Electrons&nbsp;are&nbsp;attracted&nbsp;to&nbsp;the&nbsp;nucleus&nbsp;by&nbsp;electrostatic&nbsp;forces.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;Electrons&nbsp;are&nbsp;negative&nbsp;and&nbsp;protons&nbsp;are&nbsp;positive.&nbsp;Therefore&nbsp;they&nbsp;attract&nbsp;each&nbsp;other.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;This&nbsp;attraction&nbsp;results&nbsp;in&nbsp;an&nbsp;electrostatic&nbsp;force.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>There&nbsp;are&nbsp;two&nbsp;factors&nbsp;that&nbsp;have&nbsp;a&nbsp;major&nbsp;influence&nbsp;on&nbsp;the&nbsp;Electronegativity&nbsp;of&nbsp;the&nbsp;object;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>--&gt;&nbsp;Core&nbsp;Charge</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;The&nbsp;positive&nbsp;charge&nbsp;created&nbsp;by&nbsp;the&nbsp;nucleus&nbsp;of&nbsp;the&nbsp;atom.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;For&nbsp;example;&nbsp;a&nbsp;carbon&nbsp;atom&nbsp;has&nbsp;6&nbsp;protons&nbsp;therefore&nbsp;a&nbsp;core&nbsp;charge&nbsp;of&nbsp;+6;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>--&gt;&nbsp;Distance&nbsp;to&nbsp;outer&nbsp;shell</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;The&nbsp;distance&nbsp;between&nbsp;the&nbsp;nucleus&nbsp;and&nbsp;the&nbsp;outer&nbsp;shell&nbsp;electron&nbsp;negatively&nbsp;effects&nbsp;the&nbsp;amount&nbsp;of&nbsp;positive&nbsp;charge&nbsp;acting&nbsp;on&nbsp;the&nbsp;electron.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--bullet-point syntax--star syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--item syntax--text"><span>*</span></span><span>&nbsp;Electrons&nbsp;that&nbsp;are&nbsp;in&nbsp;between&nbsp;the&nbsp;outer&nbsp;shell&nbsp;and&nbsp;the&nbsp;nucleus&nbsp;&#39;Shield&#39;&nbsp;the&nbsp;electron&nbsp;and&nbsp;less&nbsp;charge&nbsp;acts&nbsp;upon&nbsp;it.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>What&nbsp;is&nbsp;the&nbsp;core&nbsp;charge&nbsp;of&nbsp;a&nbsp;specific&nbsp;electron:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>To&nbsp;find&nbsp;the&nbsp;core&nbsp;charge&nbsp;of&nbsp;an&nbsp;electron&nbsp;we&nbsp;minus&nbsp;the&nbsp;amount&nbsp;of&nbsp;protons&nbsp;(atomic&nbsp;number)&nbsp;by&nbsp;the&nbsp;amount&nbsp;of&nbsp;non-valence&nbsp;electrons</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;atomic&nbsp;number&nbsp;-&nbsp;nonvalence&nbsp;=&nbsp;core&nbsp;charge.</span></span></span></div></pre><p><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Core charge.gif" alt="alt"></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>As&nbsp;you&nbsp;go&nbsp;from&nbsp;left&nbsp;to&nbsp;right&nbsp;on&nbsp;the&nbsp;periodic&nbsp;table&nbsp;the&nbsp;core&nbsp;charge&nbsp;of&nbsp;the&nbsp;atom&nbsp;increases&nbsp;(shown&nbsp;in&nbsp;gif).</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>As&nbsp;the&nbsp;core&nbsp;charge&nbsp;of&nbsp;the&nbsp;atom&nbsp;increases&nbsp;it&#39;s&nbsp;attraction&nbsp;to&nbsp;other&nbsp;atoms&nbsp;also&nbsp;increases.&nbsp;(Electronegativity)</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>As&nbsp;you&nbsp;go&nbsp;down&nbsp;the&nbsp;periodic&nbsp;table&nbsp;the&nbsp;core&nbsp;charge&nbsp;stays&nbsp;the&nbsp;same.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>But&nbsp;the&nbsp;atom&nbsp;gets&nbsp;more&nbsp;shelles.</span></span></span></div></pre><p><strong>Atomic size</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Across&nbsp;the&nbsp;periodic&nbsp;table&nbsp;core&nbsp;charge&nbsp;increases;&nbsp;therefore&nbsp;attraction&nbsp;between&nbsp;electrons&nbsp;and&nbsp;nucleus&nbsp;increases.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>--&gt;&nbsp;as&nbsp;this&nbsp;attraction&nbsp;increases&nbsp;the&nbsp;electrons&nbsp;get&nbsp;pulled&nbsp;in&nbsp;more&nbsp;and&nbsp;the&nbsp;atom&nbsp;becomes&nbsp;slightly&nbsp;smaller.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>across&nbsp;ptable&nbsp;core&nbsp;charge&nbsp;increases</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;attraction&nbsp;b/w&nbsp;nucleus&nbsp;&amp;&nbsp;val&nbsp;e-&nbsp;increases</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;e-&nbsp;held&nbsp;tighter</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;atom&nbsp;smaller</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Down&nbsp;ptable&nbsp;core&nbsp;charge&nbsp;stays&nbsp;the&nbsp;same:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;Core&nbsp;charge&nbsp;stays&nbsp;the&nbsp;same</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;Number&nbsp;of&nbsp;shells&nbsp;increases</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;More&nbsp;shielding</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;Atoms&nbsp;will&nbsp;be&nbsp;slightly&nbsp;bigger&nbsp;than&nbsp;the&nbsp;ones&nbsp;above&nbsp;them&nbsp;on&nbsp;the&nbsp;table.</span></span></span></div></pre><p><strong>Electronegativity</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;e-&nbsp;attracting&nbsp;power&nbsp;of&nbsp;an&nbsp;atom.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>as&nbsp;you&nbsp;go&nbsp;across&nbsp;the&nbsp;ptable,&nbsp;core&nbsp;charge&nbsp;increases.&nbsp;Therefore:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;attraction&nbsp;between&nbsp;nucleus&nbsp;and&nbsp;valence&nbsp;electrons&nbsp;increases.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Electronegativity&nbsp;increases.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Attraction&nbsp;between&nbsp;atoms&nbsp;increases.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Down&nbsp;ptable&nbsp;core&nbsp;charge&nbsp;stays&nbsp;the&nbsp;same:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;Core&nbsp;charge&nbsp;stays&nbsp;the&nbsp;same</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Number&nbsp;of&nbsp;shells&nbsp;increases</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;More&nbsp;shielding</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Less&nbsp;attraction&nbsp;between&nbsp;atoms</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Less&nbsp;Electronegativity</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Because&nbsp;core&nbsp;charge&nbsp;is&nbsp;positive,&nbsp;the&nbsp;greater&nbsp;the&nbsp;core&nbsp;charge,&nbsp;the&nbsp;easier&nbsp;it&nbsp;is&nbsp;to&nbsp;attract&nbsp;negative&nbsp;electrons.</span></span></span></div></pre><p><strong>Ionization energy</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;energy&nbsp;required&nbsp;to&nbsp;remove&nbsp;one&nbsp;electron&nbsp;from&nbsp;an&nbsp;atom.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Ionization&nbsp;is&nbsp;when&nbsp;an&nbsp;atom&nbsp;has&nbsp;lost&nbsp;or&nbsp;gained&nbsp;an&nbsp;electron.&nbsp;The&nbsp;energy&nbsp;required&nbsp;to&nbsp;remove&nbsp;an&nbsp;electron&nbsp;from&nbsp;an&nbsp;atom</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>is&nbsp;known&nbsp;as&nbsp;ionization&nbsp;energy.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>as&nbsp;you&nbsp;go&nbsp;across&nbsp;the&nbsp;ptable,&nbsp;core&nbsp;charge&nbsp;increases.&nbsp;Therefore:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;attraction&nbsp;between&nbsp;nucleus&nbsp;and&nbsp;valence&nbsp;electrons&nbsp;increases.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;electrons&nbsp;held&nbsp;in&nbsp;tighter</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Harder&nbsp;to&nbsp;remove&nbsp;electron&nbsp;from&nbsp;atom&nbsp;because&nbsp;it&nbsp;is&nbsp;held&nbsp;in&nbsp;tighter</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Ionization&nbsp;energy&nbsp;increases</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Down&nbsp;ptable&nbsp;core&nbsp;charge&nbsp;stays&nbsp;the&nbsp;same:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;Core&nbsp;charge&nbsp;stays&nbsp;the&nbsp;same</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Number&nbsp;of&nbsp;shells&nbsp;increases</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;More&nbsp;shielding</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Less&nbsp;attraction&nbsp;between&nbsp;nucleus&nbsp;and&nbsp;valence&nbsp;electrons</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Easier&nbsp;to&nbsp;remove&nbsp;an&nbsp;electron</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Ionization&nbsp;energy&nbsp;decreases</span></span></span></div></pre><p><strong>Metallic behavior</strong></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Metals&nbsp;want&nbsp;to&nbsp;lose&nbsp;electrons;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Non-Metals&nbsp;want&nbsp;to&nbsp;gain&nbsp;electrons;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;reason&nbsp;for&nbsp;this;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>-&nbsp;The&nbsp;larger&nbsp;the&nbsp;core&nbsp;charge&nbsp;of&nbsp;the&nbsp;atom&nbsp;the&nbsp;more&nbsp;it&nbsp;wants&nbsp;electrons.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;-&nbsp;As&nbsp;you&nbsp;go&nbsp;from&nbsp;left&nbsp;to&nbsp;right&nbsp;you&nbsp;go&nbsp;from&nbsp;metals&nbsp;to&nbsp;non-metals.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;∴&nbsp;Metals&nbsp;are&nbsp;on&nbsp;the&nbsp;left&nbsp;of&nbsp;the&nbsp;table&nbsp;and&nbsp;non-metals&nbsp;are&nbsp;on&nbsp;the&nbsp;right.&nbsp;&nbsp;</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>Down&nbsp;ptable&nbsp;core&nbsp;charge&nbsp;stays&nbsp;the&nbsp;same:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>∴&nbsp;More&nbsp;shielding</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;∴&nbsp;Less&nbsp;attraction&nbsp;between&nbsp;nucleus&nbsp;and&nbsp;valence&nbsp;electrons</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;∴&nbsp;Easier&nbsp;to&nbsp;move&nbsp;an&nbsp;electron</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;∴&nbsp;Metals&nbsp;like&nbsp;to&nbsp;lose&nbsp;electrons</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>&nbsp;&nbsp;&nbsp;&nbsp;∴&nbsp;More&nbsp;Metallic</span></span></span></div></pre><hr>
+<h2 id="lesson-21">Lesson 21</h2>
+<p>.</p></body>
+</html>
