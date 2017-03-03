@@ -390,7 +390,7 @@ When an electron goes back into the ground state it fills up the shell that is m
 ```
 **Looks like this**
 
-![alt](Ground state & Excited.gif)
+![link](http://imgur.com/uNcQjVM)
 
 **Ions in the shrongdonger model**
 ```
@@ -443,7 +443,7 @@ What is the core charge of a specific electron:
   To find the core charge of an electron we minus the amount of protons (atomic number) by the amount of non-valence electrons
   atomic number - nonvalence = core charge.
 ```
-![alt](Core charge.gif)
+![link](http://imgur.com/CJxIkK2)
 ```
 As you go from left to right on the periodic table the core charge of the atom increases (shown in gif).
 As the core charge of the atom increases it's attraction to other atoms also increases. (Electronegativity)
