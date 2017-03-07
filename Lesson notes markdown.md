@@ -390,7 +390,7 @@ When an electron goes back into the ground state it fills up the shell that is m
 ```
 **Looks like this**
 
-![link](http://imgur.com/uNcQjVM)
+![alt](Ground state & Excited.gif)
 
 **Ions in the shrongdonger model**
 ```
@@ -443,13 +443,13 @@ What is the core charge of a specific electron:
   To find the core charge of an electron we minus the amount of protons (atomic number) by the amount of non-valence electrons
   atomic number - nonvalence = core charge.
 ```
-![link](http://imgur.com/CJxIkK2)
+![alt](core charge.gif)
 ```
 As you go from left to right on the periodic table the core charge of the atom increases (shown in gif).
 As the core charge of the atom increases it's attraction to other atoms also increases. (Electronegativity)
 
 As you go down the periodic table the core charge stays the same.
-But the atom gets more shelles.
+But the atom gets more shelles.``
 ```
 
 **Atomic size**
@@ -472,6 +472,7 @@ Down ptable core charge stays the same:
 **Electronegativity**
 ```
 The e- attracting power of an atom.
+AKA; How much an atom wants to gain an electron.
 
 as you go across the ptable, core charge increases. Therefore:
   ∴ attraction between nucleus and valence electrons increases.
@@ -528,14 +529,99 @@ The reason for this;
     ∴ More Metallic
 ```
 
+
 -----------------------------------------------------------------
-## Lesson 21 ##
+## Lesson 22 ##
 
+**reactivity of metals and non-metals**
+```
+Metals;
+  * When metals react they lose electrons;
+  * reactivity increases down a group and decreases across a period.
 
+Non-Metals;
+  * When non-metals react they gain electrons
+  * Reactivity decreases down a group and increases across a period.
+```
 
+**When describing trends**
+```
+Only describe that trend. Each trend is its own entity so you do not use another trend to explain it.
 
+Example [explain reactivity of metals];
+  * Reactivity of metals increases down a group because metals tend to lose electrons.
+  * As you move down a group the number of shells in an atom increases so the valence electrons are held further from the nucleus and held less strongly.
+  * As you move left to right across a period, the core charge of atoms increases, so the attractive force felt by the valence electrons and the nucleus increases.
 
+Example [When metals react they LOSE electrons, non-metals gain electrons];
+  * Metals lose electrons when they react because it is easier for them to lose electrons than to gain them.
+  * As you move across a period the core charge of an atom increases, so the attractive force between the valence electrons and the electrons increases. This means that the electrons are held tighter on the right side of the periodic table, atoms with tighter electrons find it harder to lose electrons.
+  * The non-metals are all found on the right side of the periodic table, whilst the metals are on the right. The core charge of Metals are really low so they easily lose electrons.
+```
 
+-------------------------------------------------------------------------
+## Lesson 23 ##
+
+**ionic bonding introduction**
+```
+Things you gotta know;
+  1: Atoms turn to IONS.
+    -> An atom becomes an ion when it gains to loses an electron.
+    -> This means there are either more or less electrons than protons.
+    -> If an atom gains an electron it becomes a negative ion because there are more electrons than protons.
+    -> Atoms want to gain or lose electrons to reach the lowest energy level;
+      * It wants a full outer shells
+      * It wants to be more stable by having a full outer shell.
+
+  2: Metals vs. non-metals;
+    -> Metals lose electrons to become positive
+    -> Non metals gain electrons to become negative
+
+  3: Electrons are transferred
+    -> Metals give electrons to non metals
+    -> Non metals take electrons from metals.
+```
+
+**Types of bonding**
+```
+Atoms with a full outer shell are very stable;
+There are three types of bonding;
+  -> Ionic bonding;
+    * By giving electrons to another atom
+  -> Metallic bonding
+    * By taking electrons from another atom
+  -> Covalent bonding
+    * By sharing electrons with another atom
+```
+
+**What is ionic bonding?**
+```
+Analogy;
+  A metal falls in love with a non metal.
+  The non metal doesn't like the metal very much
+  The metal gives the non metal a gift; one of its electrons
+  The non-metal takes the electron.
+  Both of them suddenly become an ion.
+  The metal becomes a positive cation and the non metal becomes a negative anion.
+  Now the non metal is attracted to the metal and the metal is attracted to it.
+  The two metals bond together.
+```
+
+**Using electronegativity affect ionic bonding**
+```
+Atoms that are more electronegative want to gain electrons more.
+Atoms with low electronegativity would rather lost an electron.
+
+An ionic bond forms between an atom that wants to gain and an atom that wants to lose an electron.
+```
+
+**Making dot diagrams**
+![alt](http://hyperphysics.phy-astr.gsu.edu/hbase/pertab/imgper/perlewis.gif)
+```
+Dot diagrams make it easy to see an atoms valence shell.
+When you draw a dot diagram you only have to draw the valence shell.
+When drawing them you always start from the 12:00 position and place dots clockwise.
+```
 
 
 
