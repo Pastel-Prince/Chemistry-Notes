@@ -605,6 +605,17 @@ Analogy;
   The metal becomes a positive cation and the non metal becomes a negative anion.
   Now the non metal is attracted to the metal and the metal is attracted to it.
   The two metals bond together.
+
+So;
+  Say you have Na and Cl.
+  Cl has one spot without an electron
+  Na has one extra electron.
+  Na is a metal and Cl is a non-metal so they can't share their electrons.
+  So instead Cl steals Na's electron making it a negative ion. It also makes the Na positive.
+  Because of this the Na+ is attracted to the Cl-
+
+Groups;
+  So Ionic compounds can be in groups. In this case the Negatives and positives are attracted to all of the negative and positive ions all around them.
 ```
 
 **Using electronegativity affect ionic bonding**
@@ -623,10 +634,231 @@ When you draw a dot diagram you only have to draw the valence shell.
 When drawing them you always start from the 12:00 position and place dots clockwise.
 ```
 
+------------------------------------------------------------
+## Lesson 24 Language of chemistry ##
+
+**Terms;**
+```
+* molecule;
+  -> A molecule is a group of two or more atoms containing different types covalently bonded together that are neutrally charged They are the smallest unit of a chemical compound. A molecule is written in molecular formula.
+* compound;
+  -> A compound is a pure substance made up of different type of atoms combined in a fixed ratio.
+  -> A compound can also be a molecule.
+* ion;
+  -> An ion is a charged atom or molecule.
+  -> A monoatomic ion is an atom that is charged.
+  -> A polyatomic ion is a molecule that is charged.
+```
+
+**Polyatomic ions + Electronegativity;**
+```
+  * If you have a polyatomic ion you can easily figure out which one is the most electronegative;
+  * Example;
+    -> Na Cl
+    -> Na is the positive electron so it is on the left, Cl is the negative electron so it is on the right,
+    -> A negative atom has gained an electron.
+    -> The electronegativity of an atom is its electron attracting power  
+```
+----------------------------------------------------------------------
+## Lesson 25 How ionic bonds form (recap)##
+
+**Recap**
+1. Most elements are unstable they have incomplete outershell electron configurations so they can bond with other substances.
+2. Atoms with a low electronegativity will typically give their electron to an atom with a high electronegativity. When the difference between these electronegativity is high above 1.7, this results in the bond being described as an ionic bond.
+3. Metal atoms form cations and non metal atoms form anions.
+4. There is an electrostatic force of attraction between cations and anions.
+
+**Electrostatic attraction**
+- An electrostatic attraction is the crux of an ionic bond.
+- An electrostatic attraction is an attraction between a positively and negatively charged particle.
+- Ionic bonds are formed because two ionized particles form an electrostatic attraction between each other.
+
+**Crystal formations**
+- Solids typically form into a lattice
+  - A lattice is mainly a regular repeating array of particles.
+  - They are arranged in a cation - anion - cation formation.
+  - ![img](http://image.tutorvista.com/content/chemical-bonding/crystal-lattice-of-nacl.gif)
+  - **But not all atoms are the same size**
+    - A lattice is not always a cube shape because of the difference in sizes.
+    - This difference in size works because the cations will be just far enough away from other cations to not be affected by them.
+
+**Intra and Inter molecular bonding**
+- There are two bonding types;
+  - **`Intra`** molecular bonding
+    -
+  - **`Inter`** molecular bonding
+    - `inter`molecular bonding is bonding that happens **Between** molecules/compounds
+    - Think `inter` school sports. Or `inter` net connecting networks together.
+
+**Bond force between ionic bonds**
+- Bond force between ions is strongest when ions are small
+  - This is because the valence electrons are closer to the nucleus so it has a stronger effect over them
+- Bond force is stronger when the difference between the two charges is larger.
+  - This is because there is more charge able to pull them together.
+
+**Lattices**
+- When meddeling a lattice you have to model it in a cube.
+- NaCl lattice goes:
+- ![img](http://img.sparknotes.com/figures/F/f5f06427ca577d5d3e20918b658bd4d9/liclcrystal.gif)
+```
+Na - Cl - Na
+Cl - Na - Cl
+Na - Cl - Na
+```
+- This is a 6:6 lattice because each atom is surrounded by 6 of the other atom.
+- **NaCl being pulled apart by water**
+  - ![alt](Salt being pulled apart.gif)
+
+**Factors that affect crystal formation**
+- Size of crystals can be influenced by a number of factors:
+  - The solubility of the sample
+  - The number of nucleation sites
+    -
+  - The crystal vessel needs to be clean
+    - **REMEMBER *T*O CL*E*AN T`H`E `*FU*`CKING GLASSWEAR PATRICK!!!!!!**
+    - If they ain't clean then there will be premature nucleation
+  - Disturbances
 
 
+--------------------------------------------------------------------
+## Chapter 4.1##
+
+**Properties of ionic compounds**
+- Have high melting and boiling points
+- Solid at room temperature
+- Hard but brittle (like wood)
+- Nether malleable nore ductile
+- Do not conduct electricity as a solid
+- Good conductors in liquid state [or when dissolved in water]
+- Dissolvable in polar substances.
+
+**Finding the structure of a compound from its properties**
+- From the properties of an ionic compound you tell what it is like:
+
+|               Property               |             What this tells us bout the structure             |
+| ------------------------------------ | ------------------------------------------------------------- |
+| High melting point                   | Forces between the particles are strong                       |
+| Hard, brittle crystals               | Forces between particles are strong                           |
+| non conductive in solid state        | No free moving charged particles are present                  |
+| Conducts electricity in molten state | Free moving charged particles are present in the molten state |
+
+**How ionic compounds are arranged in solid state**
+- When compounds are formed:
+  * *Metal atoms lose electrons and become positively charged [cations]*
+  * *Non-Metal atoms gain electrons from metal atoms and become negatively charged [anions]*
+- They then arrange themselves:
+  - Lots of cations and anions get together to form a 3D lattice
+  - The cations and anions are oppositely charged and therefore attract eachother
+  - The opposite attraction of every other particle holds all the particles in place.
+  - The electrostatic attraction between every particle in the lattice is called **ionic bonding**
+
+- ***In other words***
+  - When a 3D lattice is made each particle in it is either a poisitve [cation] or negative [anion]
+  - Because each particle is charged, it won't just attract just one particle but all the particles around it
+  - Because of this, to be stable the cation would like to have an anion in all 6 directions around it
+  - The anions would like this too
+
+-----------------------------------------------------------------------
+
+## Chapter 4.2##
+
+**Why do ionic bonds have:**
+
+**High melting points**
+- The ionic bonds between ions are very strong;
+- Because of this it takes a lot of energy to break the bonds
+
+**Hardness and brittleness**
+-
+
+----------------------------------------------------------------------
+
+## Lesson 26##
+
+**Nucleation**
+  - If you have one point with lots of one ionic compound then it will set off all the other ionic compounds and form a crystal;
+  - You start out with a solution of supersaturated sodium acetate & you add another drop of sodium acetate then it will nucleate and crystalise.
+
+**Type of ionic compound**  
+  - Different ionic compounds affect the crystals formation.
 
 
+-------------------------------------------------------------------
 
+## Lesson 27 ##
+
+Revision [stuff we've covered this term]:
+  - Trends
+  - Subshells
+  - Formation prac
+  - Naming ionic compounds
+  - Ionic bonds
+
+**Ionic Formula**
+  - *need to balance overall charge*
+
+**If ions have the same number**
+```css
+Na + Cl; /* Na and Cl both have the same charge [1+ and 1-]*/
+Na[+] + Cl[-] --> NaCl
+
+Mg + O /* Mg and O both have the same charge [2+ and 2-]*/
+Mg[2+] + O[2-] --> MgO
+
+/* Same goes for polyatomic ions*/
+
+NH4 + CN /* NH4 and CN both have the same charge [1+ and 1-]*/
+NH4[1+] + CN[1-] --> NH4CN
+
+/* Same goes for Monoatomic and polyatomic ions */
+
+Al + PO4/* Al and PO4 both have the same charge [3+ and 3-]*/
+Al[3+] + PO4[3-] --> AlPO4
+
+```
+
+
+**If ions have different charges**
+
+```css
+Al + O /* Start with a formula */
+Al[3+] + O[2-]  /* Write down the charges */
+Al * 2 /* Multiply the aluminum by he charge of the oxygen */
+O * 3 /*  Multiply the oxygen by the charge of the Aluminum */
+--> 2Al+3O /* Write down the new formula */
+--> Al2 + O3 /* Make the new numbers into the subscript [IMPORTANT] */
+```
+
+**If it has a simpler ratio**
+```css
+Ti2 + O4 /* say we already have a titanium oxide */
+Ti[4+] + O[2-] /*If we look at the charges we can see that it has a ration 1:2 */
+Ti2 + O4 /* We need to rewrite this in the lowest ratio */
+T + O2 /* This is is with the 1:2 ratio */
+
+/* Sometimes you can see it has a ratio already*/
+Ti2O4 /* You can divide both the numbers by two */
+TiO2
+```
+
+**Say we have polyatomic ions**
+```css
+  NH4 + SO4
+  NH4[+] + SO4[2-] /*Write down the charges */
+  2NH4 + SO4 /* Cross multiply the charges */
+  NH4*2 + SO4 /* You can see there are 2 NH4's */
+  (NH4)2 + SO4 /* To write this we put the NH4 in brackets and what we multiply it as subscript outside the brackets*/
+
+  (NH4)2 is not the same as N2H8 !!!
+```
+
+
+**Example**
+
+|                 |   OH<sup>-</sup>   |              CO3<sup>2</sup>               |        PO<sub>4</sub><sup>3-</sup>         |
+| --------------- | ------------------ | ------------------------------------------ | ------------------------------------------ |
+| Na<sup>-</sup>  | NaOH               | Na<sub>2</sub>CO<sub>3</sub>               | Na<sub>3</sub>PO<sub>4</sub>               |
+| Mg<sup>2+</sup> | Mg(OH)<sub>2</sub> | MgCO<sub>3</sub>                           | Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub> |
+| Al<sup>3+</sup> | Al(OH)<sub>3</sub> | Al<sub>2</sub>(CO<sub>3</sub>)<sub>3</sub> | AlPO<sub>4</sub>                           |
 
 .
