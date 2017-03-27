@@ -795,10 +795,10 @@ Revision [stuff we've covered this term]:
   - Ionic bonds
 
 **Ionic Formula**
-  - *need to balance overall charge*
+  - need to balance overall charge
 
 **If ions have the same number**
-```css
+```
 Na + Cl; /* Na and Cl both have the same charge [1+ and 1-]*/
 Na[+] + Cl[-] --> NaCl
 
@@ -820,34 +820,38 @@ Al[3+] + PO4[3-] --> AlPO4
 
 **If ions have different charges**
 
-```css
-Al + O /* Start with a formula */
-Al[3+] + O[2-]  /* Write down the charges */
-Al * 2 /* Multiply the aluminum by he charge of the oxygen */
-O * 3 /*  Multiply the oxygen by the charge of the Aluminum */
---> 2Al+3O /* Write down the new formula */
---> Al2 + O3 /* Make the new numbers into the subscript [IMPORTANT] */
+```html
+Al + O <!-- Start with a formula -->
+Al[3+] + O[2-]  <!-- Write down the charges -->
+Al * 2 <!-- Multiply the aluminum by he charge of the oxygen -->
+O * 3 <!-- Multiply the oxygen by the charge of the Aluminum -->
+--> 2Al+3O <!-- Write down the new formula -->
+--> Al2 + O3 <!-- Make the new numbers into the subscript [IMPORTANT] -->
 ```
 
-**If it has a simpler ratio**
-```css
-Ti2 + O4 /* say we already have a titanium oxide */
-Ti[4+] + O[2-] /*If we look at the charges we can see that it has a ration 1:2 */
-Ti2 + O4 /* We need to rewrite this in the lowest ratio */
-T + O2 /* This is is with the 1:2 ratio */
 
-/* Sometimes you can see it has a ratio already*/
-Ti2O4 /* You can divide both the numbers by two */
+**If it has a simpler ratio**
+
+
+```html
+Ti2 + O4 <!--say we already have a titanium oxide -->
+Ti[4+] + O[2-] <!--If we look at the charges we can see that it has a ration 1:2 -->
+Ti2 + O4 <!--We need to rewrite this in the lowest ratio -->
+T + O2 <!-- This is is with the 1:2 ratio -->
+
+<!-- Sometimes you can see it has a ratio already -->
+Ti2O4 <!-- You can divide both the numbers by two -->
 TiO2
 ```
 
 **Say we have polyatomic ions**
-```css
+
+```html
   NH4 + SO4
-  NH4[+] + SO4[2-] /*Write down the charges */
-  2NH4 + SO4 /* Cross multiply the charges */
-  NH4*2 + SO4 /* You can see there are 2 NH4's */
-  (NH4)2 + SO4 /* To write this we put the NH4 in brackets and what we multiply it as subscript outside the brackets*/
+  NH4[+] + SO4[2-] <!--Write down the charges -->
+  2NH4 + SO4 <!--Cross multiply the charges-->
+  NH4*2 + SO4 <!--You can see there are 2 NH4's -->
+  (NH4)2 + SO4 <!--To write this we put the NH4 in brackets and what we multiply it as subscript outside the brackets*/-->
 
   (NH4)2 is not the same as N2H8 !!!
 ```
@@ -860,5 +864,105 @@ TiO2
 | Na<sup>-</sup>  | NaOH               | Na<sub>2</sub>CO<sub>3</sub>               | Na<sub>3</sub>PO<sub>4</sub>               |
 | Mg<sup>2+</sup> | Mg(OH)<sub>2</sub> | MgCO<sub>3</sub>                           | Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub> |
 | Al<sup>3+</sup> | Al(OH)<sub>3</sub> | Al<sub>2</sub>(CO<sub>3</sub>)<sub>3</sub> | AlPO<sub>4</sub>                           |
+
+
+
+----------------------------------------------------------------------
+## Lesson 28 ##
+
+**Quiz answers**
+**Why do sodium and chlorine atoms form ions with opposite charges?**
+  - Sodium has one valence electron meaning to follow the octet rule it would have to lose an electron to have a full outer shell. Chlorine on the other hand would like to gain an electron to fill its outer shell. When sodium loses an electron it has more protons than electrons and becomes positively charged, when chlorine gains that electron it has more electrons than protons and becomes negatively charged
+
+  - As explained in the last question, sodium has to lose one electron to have a full outer shell. Magnesium on the other hand has to lose TWO electrons to gain a full outer shell. Because it now has 2 more protons than electrons it has a charge of +2
+
+**Ions i need to know**
+|   Name    |    Formula     |
+| --------- | -------------- |
+| Sulphate  | SO<sub>4</sub> |
+| Carbonate | CO<sub>3</sub> |
+| Nitrate   | NO<sub>3</sub> |
+| Oxide     | O<sub>2</sub>  |
+
+--------------------------------------------------------------------------
+## Lesson 29 ##
+
+**Correctly answering chemistry questions**
+
+**Tips**
+- *Watch your language*
+  - Scientific language will win you the marks;
+  - Use Meta-Language from the unit;
+  - Incorrect chemical terms will lose mark.
+- *Be specific*
+  - If you are vague then it implies you are dodging the question or don't know;
+  - Make sure answers are long and go into detail about the idea;
+  - Make sure you `ANSWER THE QUESTION` that is `ASKED`.
+
+------------------------------------------------------------------------
+## Lesson 30 ##
+
+**Hydrated Ionic compounds**
+- All ions are attracted to water.
+- When there are large holes in a solid ionic lattice; water molecules will fill the hole. And become a part of the compound
+- A compound that has water in the holes is called a Hydrated Ionic compound.
+- **How to show Hydrated:**
+  - Write the emperical formula:
+    - *NaCl*
+  - Add full stop then H2O to the end
+    - *NaCl.H<sub>2</sub>O*
+  - In this case, for every NaCl there is 2 H2O so we add a coefficient
+    - NaCl.2H<sub>2</sub>O
+- **Determining empirical formulae from experimental data**
+  - To figure out the ratio of NaCl to H<sub>2</sub>O all we have to do is weigh the NaCl, heat it, cool it, weigh it again and repeat.
+  - We have to heat it up to dehydrate it.
+  - We are heating it up until it reaches a constant mass.
+  - If it reaches a constant mass it means that we have removed all the water.
+
+**Prac Results**
+
+**Formula of hydrated copper(III) sulfate:**
+|                                          | Mass(g) |
+|:---------------------------------------- |:------- |
+| Mass of crucible + lid                   |         |
+| Mass of crucible + lid + hydrate         |         |
+| Mass of hydrate                          |         |
+| Mass of crucible + hydrate after heating |         |
+| Mass of water given off                  |         |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .
