@@ -109,9 +109,12 @@
 .markdown-preview table th, .markdown-preview table td { border-color: rgb(59, 77, 86); }
 .markdown-preview table th { background-color: rgb(54, 72, 80); }
 .markdown-preview small { font-size: 80%; }
-* {
-  color: black;
-  font-family: monospace;
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.syntax--meta.syntax--bullet-point.syntax--star.syntax--text span{
+  color: grey;
 }
 @-webkit-keyframes rainbow-selection {
   0% {
@@ -152,11 +155,6 @@ pre.editor-colors .selection .region {
   -webkit-animation: rainbow-selection 10s linear infinite;
 }
 
-.bracket-matcher .region {
-  border-bottom: 1px dotted lime;
-  position: absolute;
-}
-
 .spell-check-misspelling .region {
   border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
 }
@@ -164,9 +162,10 @@ pre.editor-colors .selection .region {
   width: 25em !important;
 }
 
+@import "styles/languages/css";
 pre.editor-colors {
   background-color: #263238;
-  color: #eeffff;
+  color: #EEFFFF;
 }
 pre.editor-colors .wrap-guide {
   background-color: #2b3940;
@@ -194,10 +193,10 @@ pre.editor-colors .gutter .line-number.cursor-line-no-selection {
 pre.editor-colors .fold-marker:after,
 pre.editor-colors .gutter .line-number.folded,
 pre.editor-colors .gutter .line-number:after {
-  color: #b2ccd6;
+  color: #B2CCD6;
 }
 pre.editor-colors .invisible {
-  color: #eeffff;
+  color: #EEFFFF;
 }
 pre.editor-colors .cursor {
   color: #009688;
@@ -208,80 +207,80 @@ pre.editor-colors .selection .region {
 }
 pre.editor-colors .search-results .syntax--marker .region {
   background-color: transparent;
-  border: 1px solid #b2ccd6;
+  border: 1px solid #B2CCD6;
 }
 pre.editor-colors .search-results .syntax--marker.current-result .region {
-  border: 1px solid #ffffff;
+  border: 1px solid white;
 }
 .syntax--comment {
   color: #4f6875;
 }
 .syntax--keyword {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--keyword.syntax--control {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--keyword.syntax--control.syntax--elements {
-  color: #b2ccd6;
+  color: #B2CCD6;
 }
 .syntax--keyword.syntax--operator {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--keyword.syntax--other.syntax--special-method {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--keyword.syntax--other.syntax--unit {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--storage {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--constant {
-  color: #f07178;
+  color: #F07178;
 }
 .syntax--constant.syntax--character.syntax--escape {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--constant.syntax--numeric {
-  color: #f78c6a;
+  color: #F78C6A;
 }
 .syntax--constant.syntax--other.syntax--color {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--constant.syntax--other.syntax--symbol {
-  color: #c3e88d;
+  color: #C3E88D;
 }
 .syntax--variable {
-  color: #eeffff;
+  color: #EEFFFF;
 }
 .syntax--variable.syntax--interpolation {
   color: #eb434c;
 }
 .syntax--variable.syntax--parameter.syntax--function {
-  color: #f78c6a;
+  color: #F78C6A;
 }
 .syntax--variable.syntax--language {
-  color: #ff5370;
+  color: #FF5370;
 }
 .syntax--variable.syntax--variable.syntax--object {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--invalid.syntax--illegal {
-  background-color: #f07178;
+  background-color: #F07178;
   color: #263238;
 }
 .syntax--string {
-  color: #c3e88d;
+  color: #C3E88D;
 }
 .syntax--string.syntax--regexp {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--string.syntax--other.syntax--link {
-  color: #f07178;
+  color: #F07178;
 }
 .syntax--punctuation.syntax--definition.syntax--comment {
   color: #4f6875;
@@ -290,7 +289,7 @@ pre.editor-colors .search-results .syntax--marker.current-result .region {
 .syntax--punctuation.syntax--definition.syntax--parameters,
 .syntax--punctuation.syntax--definition.syntax--string,
 .syntax--punctuation.syntax--definition.syntax--variable {
-  color: #eeffff;
+  color: #EEFFFF;
 }
 .syntax--punctuation.syntax--definition.syntax--array.syntax--begin,
 .syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin,
@@ -300,138 +299,138 @@ pre.editor-colors .search-results .syntax--marker.current-result .region {
 .syntax--punctuation.syntax--definition.syntax--parameters.syntax--end,
 .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
 .syntax--punctuation.syntax--definition.syntax--variable.syntax--end {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--punctuation.syntax--definition.syntax--heading,
 .syntax--punctuation.syntax--definition.syntax--identity {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--punctuation.syntax--definition.syntax--bold {
-  color: #ffe082;
+  color: #FFE082;
   font-weight: bold;
 }
 .syntax--punctuation.syntax--definition.syntax--italic {
-  color: #c792ea;
+  color: #C792EA;
   font-style: italic;
 }
 .syntax--punctuation.syntax--definition.syntax--entity {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--punctuation.syntax--section.syntax--array {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--punctuation.syntax--section.syntax--embedded {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--punctuation.syntax--separator.syntax--key-value {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--punctuation.syntax--terminator {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--support.syntax--class {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--support.syntax--function {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--support.syntax--function.syntax--any-method {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--support.syntax--type.syntax--property-name {
-  color: #b2ccd6;
+  color: #B2CCD6;
 }
 .syntax--support.syntax--variable.syntax--dom {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--entity.syntax--name.syntax--function {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--entity.syntax--name.syntax--type {
-  color: #eeffff;
+  color: #EEFFFF;
 }
 .syntax--entity.syntax--other.syntax--inherited-class {
-  color: #c3e88d;
+  color: #C3E88D;
 }
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-element {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--attribute {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--entity.syntax--name.syntax--class,
 .syntax--entity.syntax--name.syntax--type.syntax--class {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--entity.syntax--name.syntax--section {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--entity.syntax--name.syntax--tag {
-  color: #f07178;
+  color: #F07178;
 }
 .syntax--entity.syntax--other.syntax--attribute-name {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--meta.syntax--class {
-  color: #ffe082;
+  color: #FFE082;
 }
 .syntax--meta.syntax--delimiter.syntax--period {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--meta.syntax--link {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--meta.syntax--require {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--meta.syntax--selector {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--meta.syntax--separator {
   background-color: #373b41;
-  color: #eeffff;
+  color: #EEFFFF;
 }
 .syntax--meta.syntax--brace.syntax--round,
 .syntax--meta.syntax--brace.syntax--square {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--none {
-  color: #eeffff;
+  color: #EEFFFF;
 }
 .syntax--markup.syntax--bold {
-  color: #ffcb6b;
+  color: #FFCB6B;
   font-weight: bold;
 }
 .syntax--markup.syntax--changed {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--markup.syntax--deleted {
-  color: #f07178;
+  color: #F07178;
 }
 .syntax--markup.syntax--italic {
-  color: #c792ea;
+  color: #C792EA;
   font-style: italic;
 }
 .syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--markup.syntax--inserted {
-  color: #c3e88d;
+  color: #C3E88D;
 }
 .syntax--markup.syntax--list {
-  color: #f07178;
+  color: #F07178;
 }
 .syntax--markup.syntax--quote {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--markup.syntax--raw.syntax--inline {
-  color: #c3e88d;
+  color: #C3E88D;
 }
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
 }
 .syntax--source.syntax--gfm .syntax--markup.syntax--heading {
-  color: #c3e88d;
+  color: #C3E88D;
 }
 pre.editor-colors[mini] .scroll-view {
   padding-left: 1px;
@@ -445,119 +444,101 @@ pre.editor-colors .highlight .region.bracket-matcher {
   background-color: rgba(238, 255, 255, 0.1);
   box-shadow: inset 0 -1px 0 #009688;
 }
-.syntax--css .syntax--support.syntax--constant {
-  color: #89ddf3;
-}
-.syntax--css .syntax--support.syntax--property-name {
-  color: #73d1c8;
-}
-.syntax--css .syntax--keyword.syntax--unit {
-  color: #ffe082;
-}
-.syntax--css .syntax--constant.syntax--color {
-  color: #f78c6a;
-}
-.syntax--css .syntax--constant.syntax--color .syntax--punctuation {
-  color: currentColor;
-}
-.syntax--css .syntax--entity.syntax--tag {
-  color: #b2ccd6;
-}
 .syntax--html .syntax--meta.syntax--tag.syntax--doctype {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--html .syntax--punctuation.syntax--tag {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--js .syntax--constant {
-  color: #eeffff;
+  color: #EEFFFF;
 }
 .syntax--js .syntax--support.syntax--variable.syntax--property {
-  color: #eeffff;
+  color: #EEFFFF;
 }
 .syntax--js .syntax--entity.syntax--name.syntax--type {
-  color: #ffcb6b;
+  color: #FFCB6B;
 }
 .syntax--js .syntax--variable.syntax--property {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--js .syntax--variable.syntax--other.syntax--object {
-  color: #eeffff;
+  color: #EEFFFF;
 }
 .syntax--js .syntax--constant.syntax--numeric {
-  color: #f78c6a;
+  color: #F78C6A;
 }
 .syntax--js .syntax--constant.syntax--boolean {
-  color: #f07178;
+  color: #F07178;
 }
 .syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double {
-  color: #c3e88d;
+  color: #C3E88D;
 }
 .syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > * {
   color: currentColor;
 }
 .syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > *.syntax--punctuation.syntax--begin,
 .syntax--json .syntax--meta.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double > *.syntax--punctuation.syntax--end {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted {
-  color: #c3e88d;
+  color: #C3E88D;
 }
 .syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted * {
   color: currentColor;
 }
 .syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted *.syntax--punctuation.syntax--begin,
 .syntax--json .syntax--meta .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted *.syntax--punctuation.syntax--end {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--json .syntax--meta.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--json .syntax--meta.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted .syntax--punctuation.syntax--string {
   color: currentColor;
 }
 .syntax--php .syntax--keyword.syntax--operator.syntax--assignment {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--php .syntax--meta.syntax--object {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--php .syntax--meta.syntax--arguments {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--python .syntax--meta.syntax--function-call {
-  color: #82aaff;
+  color: #82AAFF;
 }
 .syntax--python .syntax--meta.syntax--function-call .syntax--punctuation {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--python .syntax--meta.syntax--function-call .syntax--arguments {
-  color: #7986cb;
+  color: #7986CB;
 }
 .syntax--python .syntax--meta.syntax--function-call .syntax--arguments.syntax--punctuation {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--python .syntax--variable.syntax--self {
-  color: #ff5370;
+  color: #FF5370;
 }
 .syntax--python .syntax--meta .syntax--punctuation.syntax--inheritance,
 .syntax--python .syntax--meta .syntax--punctuation.syntax--section {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--python .syntax--variable.syntax--parameter {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--python .syntax--keyword.syntax--operator {
-  color: #c792ea;
+  color: #C792EA;
 }
 .syntax--ruby .syntax--punctuation.syntax--separator {
-  color: #89ddf3;
+  color: #89DDF3;
 }
 .syntax--ruby .syntax--variable.syntax--block {
-  color: #f07178;
+  color: #F07178;
 }
 .syntax--ruby .syntax--variable.syntax--instance {
-  color: #f07178;
+  color: #F07178;
 }
 .syntax--ruby .syntax--variable.syntax--instance .syntax--punctuation {
   color: currentColor;
@@ -1037,13 +1018,578 @@ pre.editor-colors .highlight .region.bracket-matcher {
 </li>
 </ul>
 <p><strong>Prac Results</strong></p>
-<p><strong>Formula of hydrated copper(III) sulfate:</strong>
-|                                          | Mass(g) |
-|:---------------------------------------- |:------- |
-| Mass of crucible + lid                   |         |
-| Mass of crucible + lid + hydrate         |         |
-| Mass of hydrate                          |         |
-| Mass of crucible + hydrate after heating |         |
-| Mass of water given off                  |         |</p>
-<p>.</p></body>
+<p><strong>Formula of hydrated copper(III) sulfate:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">Mass(g)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Mass of crucible + lid</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Mass of crucible + lid + hydrate</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Mass of hydrate</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Mass of crucible + hydrate after heating</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Mass of water given off</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="lesson-31">Lesson 31</h2>
+<p><strong>Transition metals</strong>
+They are <code>SPECIAL</code></p>
+<ul>
+<li><p><em>First row:</em></p>
+<ul>
+<li><code>elements 21 - 30; [Scandium --&gt; Zinc]</code></li>
+<li><strong>Electron configuration</strong><ul>
+<li><em>Removes in the same order it fills.</em><ul>
+<li>Example; <strong>Nickle</strong><ul>
+<li>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>8</sup></li>
+<li>As you can see 4s is filled before 3d.</li>
+<li>This is because there is an overlap of subshells</li>
+</ul>
+</li>
+<li><strong>But how ions?</strong><ul>
+<li>To go from a metal atom to a metallic ion:</li>
+<li>Metals like to electrons.</li>
+<li>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>8</sup></li>
+<li>In this example: The valence electrons are in the fourth shell.</li>
+<li>Therefore to ionise nickle it wants to lose the electrons in the fourth shell.</li>
+<li>Therefore nickle loses 2 electrons to become Ni<sup>2+</sup></li>
+</ul>
+</li>
+<li><strong>Example: Vanadium:</strong><ul>
+<li>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>3</sup></li>
+<li>Valence electrons are in shell 4s<sup>2</sup></li>
+<li>Therefore V ion = V<sup>2+</sup></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Special cases</strong><ul>
+<li><strong>Copper [Cu]</strong><ul>
+<li>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>9</sup></li>
+<li><code>THIS IS WRONG!!</code></li>
+<li>Copper is more stable with a full d shell.</li>
+<li>To do this it takes an electron from the s shell.</li>
+<li>Therefore it should be written as:<ul>
+<li>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup> 3d<sup>10</sup></li>
+</ul>
+</li>
+<li>Therefore to remove the valence electrons we remove the 4s<sup>1</sup> electron</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>MOST TRANSITION METALS FORM 2+ IONS</code></li>
+</ul>
+</li>
+<li><p><strong>Transition Metals atoms form various ions</strong></p>
+<ul>
+<li>for example Fe(II) and Fe(III)</li>
+<li>Heres a list of the some of the different ions that can be formed.</li>
+</ul>
+<p>| Metal |      Ion 1      |      Ion 2      |
+| ----- | --------------- | --------------- |
+| Pb    | Pb<sup>2+</sup> | Pb<sup>3+</sup> |
+| Fe    | Fe<sup>2+</sup> | Fe<sup>3+</sup> |
+| Cu    | Cu<sup>+</sup>  | Cu<sup>2+</sup> |
+| Cr    | Cr<sup>2+</sup> | Cr<sup>3+</sup> |</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="metallic-bonding-">Metallic Bonding!!!</h1>
+<hr>
+<h2 id="lesson-1">Lesson 1</h2>
+<p><strong>Metallic Bonding</strong></p>
+<ul>
+<li>Metal atoms want to lose electrons.</li>
+<li>In Ionic bonding we are transferring electrons</li>
+<li>In covalent bonding we are sharing electrons</li>
+<li><em>In Metallic bonding we are delocalizing electrons</em></li>
+<li>Metallic bonding we form <code>3D lattices</code></li>
+</ul>
+<p><strong>So how does it work?</strong></p>
+<ul>
+<li><strong>Delocalization of electrons</strong><ul>
+<li>Electrons in a metallic lattice are Delocalized</li>
+<li>The electrons are free to move around.</li>
+<li>Delocalized electrons are not bound to any one atom.</li>
+<li><em>The metals with delocalized electrons become cations</em></li>
+<li><img src="http://www.dynamicscience.com.au/tester/solutions1/war/metallurgy/metals1.gif" alt="img"></li>
+</ul>
+</li>
+<li><strong>Why do they delocalized</strong><ul>
+<li>Metals have a low electronegativity (e<sup>-</sup> attracting power)</li>
+<li>And a low ionization energy (amount of energy needed to lose an electron)</li>
+<li>This means that it is easy to lose electrons</li>
+<li><img src="http://i.imgur.com/oIoEZhH.gif" alt="img"></li>
+</ul>
+</li>
+</ul>
+<p><strong>So how does it work?</strong></p>
+<ul>
+<li>Metals have 1,2 or more delocalized electrons in their outer shell.</li>
+<li>Metals become more stable by releasing the electrons</li>
+<li>For every cation there will be the correct amount of electrons<ul>
+<li><strong>When drawing a diagram make sure you have the right amount of electrons per cation</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Cations in metallic Bonds</strong></p>
+<ul>
+<li>The distance between cations in the structure is such that it doesn&#39;t repel and break apart</li>
+<li>The cations are in fixed positions whilst the electrons are free to move.</li>
+</ul>
+<p><strong>Properties of Metallic Bonds</strong></p>
+<ul>
+<li><strong>Strength;</strong><ul>
+<li>Metallic Bonds are really strong</li>
+<li>There is an <code>intra</code>molecular bond between the cations and the delocalized electrons.</li>
+<li>This is because there is a strong attraction between the cation and the delocalize electron</li>
+</ul>
+</li>
+<li><strong>High melting &amp; boiling temperature</strong><ul>
+<li>Also because of strong intramolecular bonds.</li>
+<li>It is hard to pull apart the bonds because they are very strong</li>
+</ul>
+</li>
+<li><strong>Malleable and Ductile</strong><ul>
+<li>The atoms in metal lattices are easily able to roll past each other without breaking bonds</li>
+<li><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Melleable.gif" alt="img"></li>
+</ul>
+</li>
+<li><strong>Lustrous</strong><ul>
+<li>The delocalized electrons from the metal lattice will form a &quot;sea&quot; around the outside of the ions.</li>
+<li>these electrons oscillate in a wave at a collective frequency.</li>
+<li>As light hits these waves they are reflected instead of absorbed.</li>
+</ul>
+</li>
+<li><strong>Density</strong><ul>
+<li>Metallic lattices are generally denser than non-metal lattices.</li>
+<li>This is because the cations in the lattice are as close as they can be together without interacting with each others magnetic field</li>
+<li>The magnetic force of the electrons keeps the ions in tightly.</li>
+<li>The more delocalized electrons the stronger the bonds will be and the tighter the cations will be held together.  </li>
+</ul>
+</li>
+</ul>
+<p><strong>Some good answers</strong></p>
+<ul>
+<li><em>Good answer to why metals have high melting and boiling points</em><ul>
+<li>The electrostatic attraction between the positive ions and delocalized electrons in the metal lattice are very strong, Thus they require large amounts of energy to break them.</li>
+</ul>
+</li>
+<li><em>Metals are good conductors of heat</em><ul>
+<li>Vibrations transfer the heat energy, as the ions are close together, with the electrons free to move, the particles are free to transfer their energy quickly.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Critical Vocab</strong></p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metallic Bonding</td>
+<td></td>
+</tr>
+<tr>
+<td>Delocalized electrons</td>
+<td></td>
+</tr>
+<tr>
+<td>Ionization energy</td>
+<td></td>
+</tr>
+<tr>
+<td>Lattice/crystal</td>
+<td></td>
+</tr>
+<tr>
+<td>Conductivity / heat</td>
+<td></td>
+</tr>
+<tr>
+<td>Malleable/ductile</td>
+<td></td>
+</tr>
+<tr>
+<td>Hard/strong</td>
+<td></td>
+</tr>
+<tr>
+<td>Luster/Lustrous</td>
+<td></td>
+</tr>
+<tr>
+<td>Alloys</td>
+<td></td>
+</tr>
+<tr>
+<td>Density</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pre lab q1 answers</strong></p>
+<ul>
+<li>Mg; 983K, 737.7 KJ/mol. Fe; 1811K, 762.5 KJ.mol, Ni; 1728 K, 737.1 KJ/mol. Cu; 1357.77 K, 745.5 KJ/mol. Zn; 692.68 K, 906.4 KJ/mol</li>
+</ul>
+<hr>
+<h2 id="lesson-2-prac-results">Lesson 2 Prac Results</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">property</th>
+<th style="text-align:left">ionic</th>
+<th>Metallic</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">electrical conductivity: solid</td>
+<td style="text-align:left">X</td>
+<td>✔</td>
+<td>Metals have lots of free moving electrons capable of carrying charge</td>
+</tr>
+<tr>
+<td style="text-align:left">electrical conductivity: Aqueous / Molten</td>
+<td style="text-align:left">✔</td>
+<td>✔</td>
+<td>Ionic</td>
+</tr>
+<tr>
+<td style="text-align:left">strength / Hardness</td>
+<td style="text-align:left">✔</td>
+<td>✔</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">brittle</td>
+<td style="text-align:left">✔</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">Malleable</td>
+<td style="text-align:left">X</td>
+<td>✔</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">Crystal formation</td>
+<td style="text-align:left">✔</td>
+<td>✔</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="lesson-3-alloys">Lesson 3: Alloys</h2>
+<p><strong>What&#39;s an alloy?</strong></p>
+<ul>
+<li>An alloy is a mixture of metals<ul>
+<li><em>Steel is Fe with Carbon (a non-metal)</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Why do we make alloys?</strong></p>
+<ul>
+<li>You can alter and combine properties of metals</li>
+<li>Therefore you are able to improve the properties for your needs<ul>
+<li><em>For example: You might want a material to be strong, or anti-rusting, or light.</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Examples of alloys</strong></p>
+<ul>
+<li><strong>Brass</strong><ul>
+<li>Zinc + Copper</li>
+</ul>
+</li>
+<li><strong>Bronze</strong><ul>
+<li>Copper + Tin</li>
+</ul>
+</li>
+<li><strong>Steel</strong><ul>
+<li>Carbon + Iron</li>
+<li>Increasing the strength of Iron</li>
+</ul>
+</li>
+<li><strong>Stainless Steel</strong><ul>
+<li>Iron + Carbon + Chromium</li>
+<li>Improving the anti-rusting capabilities</li>
+</ul>
+</li>
+</ul>
+<p><strong>How do the particles join/mix</strong></p>
+<ul>
+<li><strong>Non-Alloy</strong><ul>
+<li><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Non-Alloy.jpg" alt="img"></li>
+</ul>
+</li>
+<li><strong>Substitutional</strong><pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>-&nbsp;occurs&nbsp;when&nbsp;cations&nbsp;are&nbsp;roughly&nbsp;the&nbsp;same&nbsp;size</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>-&nbsp;Cations&nbsp;replace&nbsp;other&nbsp;cations</span></span></span></div></pre><ul>
+<li><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Substitutional Alloy.jpg" alt="img"></li>
+</ul>
+</li>
+<li><strong>Intertutional</strong><pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>-&nbsp;occurs&nbsp;when&nbsp;cations&nbsp;are&nbsp;much&nbsp;smaller&nbsp;so&nbsp;they&nbsp;fill&nbsp;the&nbsp;gaps</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>-&nbsp;Group&nbsp;14&nbsp;non-metals&nbsp;can&nbsp;also&nbsp;be&nbsp;intertutional.</span></span></span></div></pre><ul>
+<li><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Interstitutional Alloy.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<!-- # <p style="color: red; font-family: Comic Sans Ms; text-align: center; font-size: 500px"> sexy </p> # -->
+<hr>
+<h2 id="lesson-4-chemical-bonding">Lesson 4: Chemical Bonding</h2>
+<p><strong>Why is it important</strong></p>
+<ul>
+<li>So atoms can get to the lowest energy state</li>
+<li>To make atoms stable</li>
+<li>To fill outer shell -&gt; 2,8<ul>
+<li><em>There are always exceptions to this rule</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Why is understanding the bonding model important</strong></p>
+<ul>
+<li>We can know about the properties just by the bonding model</li>
+<li>We can tell an atoms relative melting point / boiling point etc.</li>
+<li>Predict chemicool reactions</li>
+<li>Helps with industrial applications</li>
+</ul>
+<p><strong>Intramolecular and Intermolecular Bonding</strong></p>
+<ul>
+<li><strong><code>Intra</code>Molecular bonding happens between substances</strong><ul>
+<li>If you have two hydrogen atoms and an oxygen, then the two hydrogens will bond with the oxygen</li>
+<li>This is <code>intra</code>Molecular bonding because it is atom bonding together to create a moleculez</li>
+</ul>
+</li>
+<li><strong><code>Inter</code>Molecular bonding happens between atoms in a substance</strong><ul>
+<li>For example if you have two molecules of water then they will form a small attraction between them</li>
+<li>This in an <code>inter</code>Molecular bond because it is molecules bonding together</li>
+</ul>
+</li>
+</ul>
+<p><strong>Intramolecular</strong></p>
+<ul>
+<li><strong>Ionic</strong><ul>
+<li>Ionic bonding is between ions (charged atoms)</li>
+<li>For example: NaCl. Each of them are atoms</li>
+<li>Intramolecular bonding happens between atoms not molecules</li>
+<li><code>Bond Formation Model</code><ul>
+<li>Cations + Anions</li>
+<li>3D crystalline lattice</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Metallic</strong><ul>
+<li>Metallic bonding happens between metal atoms</li>
+<li>For example a bond between Fe atoms</li>
+<li><code>Bond Formation Model</code><ul>
+<li>Delocalized electrons + Cations</li>
+<li>3D crystalline lattice</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Covalent</strong><ul>
+<li>Covalent bonds are between non-metal atoms</li>
+<li>Therefore they are between atoms not molecules</li>
+<li><code>Bond Formation Model</code><ul>
+<li>Sharing electrons between atoms</li>
+<li>^Discreet molecule^<ul>
+<li>Doesn&#39;t form lattices (except carbon)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Lewis dot diagram rules</strong></p>
+<ul>
+<li>Least electronegative atom goes in the center</li>
+<li>Place electrons for least electronegative atom first</li>
+<li>Draw other atoms around it</li>
+</ul>
+<hr>
+<h2 id="lesson-6">Lesson 6</h2>
+<p><strong>Bonding diagrams</strong>
+<img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Bonding Diagrams.png" alt="img"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Bond</th>
+<th style="text-align:left">Bond Length</th>
+<th>Bond Strength</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">single</td>
+<td style="text-align:left">Longest</td>
+<td>Weakest</td>
+</tr>
+<tr>
+<td style="text-align:left">double</td>
+<td style="text-align:left">Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td style="text-align:left">triple</td>
+<td style="text-align:left">shortest</td>
+<td>strongest</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bonding</strong></p>
+<ul>
+<li>Lone pairs determine the shape of the molecule</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">atom</th>
+<th style="text-align:left">bonds</th>
+<th>Lone Pairs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">H</td>
+<td style="text-align:left">1</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">c</td>
+<td style="text-align:left">4</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">N</td>
+<td style="text-align:left">3</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">O</td>
+<td style="text-align:left">2</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">Cl</td>
+<td style="text-align:left">1</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="lesson-7">Lesson 7</h2>
+<p><strong>Dispersion Forces</strong>
+<img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Dispersion Forces Sheet.png" alt="img"></p>
+<p><strong>Hydrogen Bonding</strong>
+<img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Hydrogen Bonding.png" alt="img"></p>
+<p><strong>Bonding Naming Scheme</strong>
+<img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Bonding Naming Scheme.png" alt="img"></p>
+<hr>
+<h2 id="lesson-8">Lesson 8</h2>
+<p><strong>VSEPR</strong></p>
+<ul>
+<li>Electron pairs repell each other and therefore try to be as far away from each other as possible</li>
+<li>The repulsion between lone pairs is greater than the repulsion between bonded pairs</li>
+<li>So basically lone pairs want to get away from other lone pairs</li>
+</ul>
+<p><strong>Shapes of bonds</strong>
+<img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Bonding Diagram Table.png" alt="img"></p>
+<hr>
+<h2 id="lesson-9">Lesson 9</h2>
+<p><strong>Covalent Naming Conventions</strong>
+<img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Bonding Naming Scheme.png" alt="img"></p>
+<hr>
+<h1 id="topic-6-organic-chemistry">TOPIC 6: ORGANIC CHEMISTRY</h1>
+<p><strong>What does organic mean in chemistry</strong></p>
+<ul>
+<li>Compounds that contain carbon</li>
+<li>Organic chemistry is the study of carbonic compounds</li>
+</ul>
+<p><strong>What type of intramolecular forces do carbon compounds form</strong></p>
+<ul>
+<li>Covalent Bonding</li>
+</ul>
+<p><strong>What about intermolecular</strong></p>
+<ul>
+<li>All types of inermolecular bonds are possible</li>
+</ul>
+<p><strong>How many bonds can carbon form</strong></p>
+<ul>
+<li>Carbon can form 2, 3 or 4 bonds.</li>
+<li>It can have tripple bonds, double bonds and single bonds</li>
+</ul>
+<p><strong>What can carbon bond to?</strong></p>
+<ul>
+<li>Carbon is able to bond to a bunch of amino atoms.</li>
+</ul>
+<p><strong>What are hydrocarbons</strong></p>
+<ul>
+<li>Hydrocarbons are molecules containing only carbon and hydrogen.</li>
+<li>They are the simplest organic molecules</li>
+</ul>
+<p><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Hydrocarbon classification.png" alt="img"></p>
+<p><strong>Alkane vs Alkyne</strong></p>
+<ul>
+<li>Alkanes are carbon to carbon single bonds</li>
+<li>Alkanes are <code>saturated</code>!!!</li>
+<li>Alkynes contain at least one double bonds.</li>
+<li>Alkynes are <code>unsaturated</code></li>
+</ul>
+<p><strong>Where does hydrocarbons come from</strong></p>
+<ul>
+<li>Crude oil</li>
+<li>Crude oil contains lots of different hydrocarbons</li>
+<li>Each of the different hydrocarbons has a different amount of electrons</li>
+<li>Therefore they all have stronger / weaker dispersion forces</li>
+<li>therefore they have different melting points</li>
+<li>therefore you can separate them by heating them at different temperatures</li>
+</ul>
+<p><strong>Naming Hydrocarbons</strong></p>
+<ul>
+<li>The prefix designates the number of carbons:<ul>
+<li><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Prefixes.PNG" alt="img"></li>
+</ul>
+</li>
+<li>The suffix describes the hydrocarbon:<ul>
+<li><img src="C:\Users\Patchy\Google Drive\School work\2017\Chemistry\Chemistry-Notes\Suffixes.PNG" alt="img"></li>
+</ul>
+</li>
+</ul>
+<p><strong>Make sure your write the amount of Hydrogens + Carbons in hydrocarbons</strong></p>
+<style>
+  .syntax--meta.syntax--paragraph.syntax--text {
+    color: black;
+  }
+</style>
+
+
+
+<p>,</p></body>
 </html>

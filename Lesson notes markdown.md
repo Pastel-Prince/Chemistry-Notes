@@ -922,6 +922,7 @@ TiO2
 **Prac Results**
 
 **Formula of hydrated copper(III) sulfate:**
+
 |                                          | Mass(g) |
 |:---------------------------------------- |:------- |
 | Mass of crucible + lid                   |         |
@@ -931,38 +932,359 @@ TiO2
 | Mass of water given off                  |         |
 
 
+------------------------------------------------------------------
+## Lesson 31 ##
+
+**Transition metals**
+They are `SPECIAL`
+- *First row:*
+  - `elements 21 - 30; [Scandium --> Zinc]`
+  - **Electron configuration**
+    - *Removes in the same order it fills.*
+      - Example; **Nickle**
+        - 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>8</sup>
+        - As you can see 4s is filled before 3d.
+        - This is because there is an overlap of subshells
+      - **But how ions?**
+        - To go from a metal atom to a metallic ion:
+        - Metals like to electrons.
+        - 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>8</sup>
+        - In this example: The valence electrons are in the fourth shell.
+        - Therefore to ionise nickle it wants to lose the electrons in the fourth shell.
+        - Therefore nickle loses 2 electrons to become Ni<sup>2+</sup>
+      - **Example: Vanadium:**
+        - 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>3</sup>
+        - Valence electrons are in shell 4s<sup>2</sup>
+        - Therefore V ion = V<sup>2+</sub>
+    - **Special cases**
+      - **Copper [Cu]**
+        - 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>9</sup>
+        - `THIS IS WRONG!!`
+        - Copper is more stable with a full d shell.
+        - To do this it takes an electron from the s shell.
+        - Therefore it should be written as:
+          - 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup> 3d<sup>10</sup>
+        - Therefore to remove the valence electrons we remove the 4s<sup>1</sup> electron
+    - `MOST TRANSITION METALS FORM 2+ IONS`
+  - **Transition Metals atoms form various ions**
+    - for example Fe(II) and Fe(III)
+    - Heres a list of the some of the different ions that can be formed.
+
+    | Metal |      Ion 1      |      Ion 2      |
+    | ----- | --------------- | --------------- |
+    | Pb    | Pb<sup>2+</sup> | Pb<sup>3+</sup> |
+    | Fe    | Fe<sup>2+</sup> | Fe<sup>3+</sup> |
+    | Cu    | Cu<sup>+</sup>  | Cu<sup>2+</sup> |
+    | Cr    | Cr<sup>2+</sup> | Cr<sup>3+</sup> |
+
+-----------------------------------------------------------------------
+
+# Metallic Bonding!!! #
+
+-----------------------------------------------------------------------
+
+## Lesson 1 ##
+
+**Metallic Bonding**
+  - Metal atoms want to lose electrons.
+  - In Ionic bonding we are transferring electrons
+  - In covalent bonding we are sharing electrons
+  - *In Metallic bonding we are delocalizing electrons*
+  - Metallic bonding we form `3D lattices`
+
+**So how does it work?**
+  - **Delocalization of electrons**
+    - Electrons in a metallic lattice are Delocalized
+    - The electrons are free to move around.
+    - Delocalized electrons are not bound to any one atom.
+    - *The metals with delocalized electrons become cations*
+    - ![img](http://www.dynamicscience.com.au/tester/solutions1/war/metallurgy/metals1.gif)
+  - **Why do they delocalized**
+    - Metals have a low electronegativity (e<sup>-</sup> attracting power)
+    - And a low ionization energy (amount of energy needed to lose an electron)
+    - This means that it is easy to lose electrons
+    - ![img](http://i.imgur.com/oIoEZhH.gif)
+
+**So how does it work?**
+  - Metals have 1,2 or more delocalized electrons in their outer shell.
+  - Metals become more stable by releasing the electrons
+  - For every cation there will be the correct amount of electrons
+    - **When drawing a diagram make sure you have the right amount of electrons per cation**
+
+**Cations in metallic Bonds**
+  - The distance between cations in the structure is such that it doesn't repel and break apart
+  - The cations are in fixed positions whilst the electrons are free to move.
+
+**Properties of Metallic Bonds**
+  - **Strength;**
+    - Metallic Bonds are really strong
+    - There is an `intra`molecular bond between the cations and the delocalized electrons.
+    - This is because there is a strong attraction between the cation and the delocalize electron
+  - **High melting & boiling temperature**
+    - Also because of strong intramolecular bonds.
+    - It is hard to pull apart the bonds because they are very strong
+  - **Malleable and Ductile**
+    - The atoms in metal lattices are easily able to roll past each other without breaking bonds
+    - ![img](Melleable.gif)
+  - **Lustrous**
+    - The delocalized electrons from the metal lattice will form a "sea" around the outside of the ions.
+    - these electrons oscillate in a wave at a collective frequency.
+    - As light hits these waves they are reflected instead of absorbed.
+  - **Density**
+    - Metallic lattices are generally denser than non-metal lattices.
+    - This is because the cations in the lattice are as close as they can be together without interacting with each others magnetic field
+    - The magnetic force of the electrons keeps the ions in tightly.
+    - The more delocalized electrons the stronger the bonds will be and the tighter the cations will be held together.  
+
+**Some good answers**
+  - *Good answer to why metals have high melting and boiling points*
+    - The electrostatic attraction between the positive ions and delocalized electrons in the metal lattice are very strong, Thus they require large amounts of energy to break them.
+  - *Metals are good conductors of heat*
+    - Vibrations transfer the heat energy, as the ions are close together, with the electrons free to move, the particles are free to transfer their energy quickly.
+
+**Critical Vocab**
+
+|         Term          | Meaning |
+| --------------------- | ------- |
+| Metallic Bonding      |         |
+| Delocalized electrons |         |
+| Ionization energy     |         |
+| Lattice/crystal       |         |
+| Conductivity / heat   |         |
+| Malleable/ductile     |         |
+| Hard/strong           |         |
+| Luster/Lustrous       |         |
+| Alloys                |         |
+| Density               |         |
 
 
 
 
 
+**Pre lab q1 answers**
+ - Mg; 983K, 737.7 KJ/mol. Fe; 1811K, 762.5 KJ.mol, Ni; 1728 K, 737.1 KJ/mol. Cu; 1357.77 K, 745.5 KJ/mol. Zn; 692.68 K, 906.4 KJ/mol
+
+------------------------------------------------------------------------
+
+## Lesson 2 Prac Results ##
+
+|                 property                  | ionic | Metallic |                             Explanation                              |
+|:----------------------------------------- |:----- | -------- | -------------------------------------------------------------------- |
+| electrical conductivity: solid            | X     | ✔        | Metals have lots of free moving electrons capable of carrying charge |
+| electrical conductivity: Aqueous / Molten | ✔     | ✔        | Ionic                                                                |
+| strength / Hardness                       | ✔     | ✔        |                                                                      |
+| brittle                                   | ✔     | X        |                                                                      |
+| Malleable                                 | X     | ✔        |                                                                      |
+| Crystal formation                         | ✔     | ✔        |                                                                      |
+
+----------------------------------------------------------------------------
+
+## Lesson 3: Alloys ##
+
+**What's an alloy?**
+- An alloy is a mixture of metals
+  - *Steel is Fe with Carbon (a non-metal)*
+
+**Why do we make alloys?**
+- You can alter and combine properties of metals
+- Therefore you are able to improve the properties for your needs
+  - *For example: You might want a material to be strong, or anti-rusting, or light.*
+
+**Examples of alloys**
+- **Brass**
+  - Zinc + Copper
+- **Bronze**
+  - Copper + Tin
+- **Steel**
+  - Carbon + Iron
+  - Increasing the strength of Iron
+- **Stainless Steel**
+  - Iron + Carbon + Chromium
+  - Improving the anti-rusting capabilities
+
+**How do the particles join/mix**
+
+- **Non-Alloy**
+  - ![img](Non-Alloy.jpg)
+- **Substitutional**
+```
+  - occurs when cations are roughly the same size
+  - Cations replace other cations
+```
+  - ![img](Substitutional Alloy.jpg)
+- **Intertutional**
+```
+  - occurs when cations are much smaller so they fill the gaps
+  - Group 14 non-metals can also be intertutional.
+```
+  - ![img](Interstitutional Alloy.jpg)
 
 
 
+-----------------------------------------------------------------
+
+<!-- # <p style="color: red; font-family: Comic Sans Ms; text-align: center; font-size: 500px"> sexy </p> # -->
+
+-----------------------------------------------------------------
+
+## Lesson 4: Chemical Bonding ##
+
+**Why is it important**
+- So atoms can get to the lowest energy state
+- To make atoms stable
+- To fill outer shell -> 2,8
+  - *There are always exceptions to this rule*
+
+**Why is understanding the bonding model important**
+- We can know about the properties just by the bonding model
+- We can tell an atoms relative melting point / boiling point etc.
+- Predict chemicool reactions
+- Helps with industrial applications
+
+**Intramolecular and Intermolecular Bonding**
+- **`Intra`Molecular bonding happens between substances**
+  - If you have two hydrogen atoms and an oxygen, then the two hydrogens will bond with the oxygen
+  - This is `intra`Molecular bonding because it is atom bonding together to create a moleculez
+- **`Inter`Molecular bonding happens between atoms in a substance**
+  - For example if you have two molecules of water then they will form a small attraction between them
+  - This in an `inter`Molecular bond because it is molecules bonding together
+
+**Intramolecular**
+- **Ionic**
+  - Ionic bonding is between ions (charged atoms)
+  - For example: NaCl. Each of them are atoms
+  - Intramolecular bonding happens between atoms not molecules
+  - `Bond Formation Model`
+    - Cations + Anions
+    - 3D crystalline lattice
+- **Metallic**
+  - Metallic bonding happens between metal atoms
+  - For example a bond between Fe atoms
+  - `Bond Formation Model`
+    - Delocalized electrons + Cations
+    - 3D crystalline lattice
+- **Covalent**
+  - Covalent bonds are between non-metal atoms
+  - Therefore they are between atoms not molecules
+  - `Bond Formation Model`
+    - Sharing electrons between atoms
+    - ^Discreet molecule^
+      - Doesn't form lattices (except carbon)
+
+**Lewis dot diagram rules**
+- Least electronegative atom goes in the center
+1. Place electrons for least electronegative atom first
+2. Draw other atoms around it
+----------------------------------------------------------------
+## Lesson 6 ##
+
+**Bonding diagrams**
+![img](Bonding Diagrams.png)
+
+|  Bond  | Bond Length | Bond Strength |
+|:------ |:----------- | ------------- |
+| single | Longest     | Weakest       |
+| double | Medium      | Medium        |
+| triple | shortest    | strongest     |
+
+**Bonding**
+- Lone pairs determine the shape of the molecule
+
+| atom | bonds | Lone Pairs |
+|:---- |:----- | ---------- |
+| H    | 1     | 0          |
+| c    | 4     | 0          |
+| N    | 3     | 1          |
+| O    | 2     | 2          |
+| Cl   | 1     | 3          |
+
+--------------------------------------------------------------
+## Lesson 7 ##
+
+**Dispersion Forces**
+![img](Dispersion Forces Sheet.png)
+
+**Hydrogen Bonding**
+![img](Hydrogen Bonding.png)
+
+**Bonding Naming Scheme**
+![img](Bonding Naming Scheme.png)
+
+--------------------------------------------------------------
+## Lesson 8 ##
+
+**VSEPR**
+- Electron pairs repell each other and therefore try to be as far away from each other as possible
+- The repulsion between lone pairs is greater than the repulsion between bonded pairs
+- So basically lone pairs want to get away from other lone pairs
+
+**Shapes of bonds**
+![img](Bonding Diagram Table.png)
+
+-------------------------------------------------------
+## Lesson 9 ##
+
+**Covalent Naming Conventions**
+![img](Bonding Naming Scheme.png)
+
+
+--------------------------------------------------
+
+# TOPIC 6: ORGANIC CHEMISTRY #
+
+**What does organic mean in chemistry**
+- Compounds that contain carbon
+- Organic chemistry is the study of carbonic compounds
+
+**What type of intramolecular forces do carbon compounds form**
+- Covalent Bonding
+
+**What about intermolecular**
+- All types of inermolecular bonds are possible
+
+**How many bonds can carbon form**
+- Carbon can form 2, 3 or 4 bonds.
+- It can have tripple bonds, double bonds and single bonds
+
+**What can carbon bond to?**
+- Carbon is able to bond to a bunch of amino atoms.
+
+**What are hydrocarbons**
+- Hydrocarbons are molecules containing only carbon and hydrogen.
+- They are the simplest organic molecules
+
+![img](Hydrocarbon classification.png)
+
+**Alkane vs Alkyne**
+- Alkanes are carbon to carbon single bonds
+- Alkanes are `saturated`!!!
+- Alkynes contain at least one double bonds.
+- Alkynes are `unsaturated`
+
+**Where does hydrocarbons come from**
+- Crude oil
+- Crude oil contains lots of different hydrocarbons
+- Each of the different hydrocarbons has a different amount of electrons
+- Therefore they all have stronger / weaker dispersion forces
+- therefore they have different melting points
+- therefore you can separate them by heating them at different temperatures
+
+**Naming Hydrocarbons**
+- The prefix designates the number of carbons:
+  - ![img](Prefixes.PNG)
+- The suffix describes the hydrocarbon:
+  - ![img](Suffixes.PNG)
+
+**Make sure your write the amount of Hydrogens + Carbons in hydrocarbons**
 
 
 
+<style>
+  .syntax--meta.syntax--paragraph.syntax--text {
+    color: black;
+  }
+</style>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.
+,
