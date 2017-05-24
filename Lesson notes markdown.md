@@ -1025,7 +1025,7 @@ They are `SPECIAL`
     - It is hard to pull apart the bonds because they are very strong
   - **Malleable and Ductile**
     - The atoms in metal lattices are easily able to roll past each other without breaking bonds
-    - ![img](Melleable.gif)
+    - ![img](https://i.imgur.com/89zA0FR.gif)
   - **Lustrous**
     - The delocalized electrons from the metal lattice will form a "sea" around the outside of the ions.
     - these electrons oscillate in a wave at a collective frequency.
@@ -1105,19 +1105,19 @@ They are `SPECIAL`
 **How do the particles join/mix**
 
 - **Non-Alloy**
-  - ![img](Non-Alloy.jpg)
+  - ![img](https://i.imgur.com/F00bt0c.jpg)
 - **Substitutional**
 ```
   - occurs when cations are roughly the same size
   - Cations replace other cations
 ```
-  - ![img](Substitutional Alloy.jpg)
+  - ![img](https://i.imgur.com/73ozcIw.jpg)
 - **Intertutional**
 ```
   - occurs when cations are much smaller so they fill the gaps
   - Group 14 non-metals can also be intertutional.
 ```
-  - ![img](Interstitutional Alloy.jpg)
+  - ![img](https://i.imgur.com/luvn7gH.jpg)
 
 
 
@@ -1179,7 +1179,7 @@ They are `SPECIAL`
 ## Lesson 6 ##
 
 **Bonding diagrams**
-![img](Bonding Diagrams.png)
+![img](https://i.imgur.com/GRzjfht.png)
 
 |  Bond  | Bond Length | Bond Strength |
 |:------ |:----------- | ------------- |
@@ -1202,13 +1202,13 @@ They are `SPECIAL`
 ## Lesson 7 ##
 
 **Dispersion Forces**
-![img](Dispersion Forces Sheet.png)
+![img](https://i.imgur.com/rAHtu9A.png)
 
 **Hydrogen Bonding**
-![img](Hydrogen Bonding.png)
+![img](https://i.imgur.com/EYbAiIR.png)
 
 **Bonding Naming Scheme**
-![img](Bonding Naming Scheme.png)
+![img](https://i.imgur.com/faFzOqd.png)
 
 --------------------------------------------------------------
 ## Lesson 8 ##
@@ -1225,7 +1225,7 @@ They are `SPECIAL`
 ## Lesson 9 ##
 
 **Covalent Naming Conventions**
-![img](Bonding Naming Scheme.png)
+![img](https://i.imgur.com/kATg7Ry.png)
 
 
 --------------------------------------------------
@@ -1253,13 +1253,18 @@ They are `SPECIAL`
 - Hydrocarbons are molecules containing only carbon and hydrogen.
 - They are the simplest organic molecules
 
-![img](Hydrocarbon classification.png)
+![img](http://lh3.googleusercontent.com/-XFQ-6oc2unw/VgS3v3e283I/AAAAAAAAAns/0lXJSmRXnWA/clip_image020_thumb2.jpg?imgmax=800)
 
 **Alkane vs Alkyne**
 - Alkanes are carbon to carbon single bonds
 - Alkanes are `saturated`!!!
 - Alkynes contain at least one double bonds.
 - Alkynes are `unsaturated`
+
+**Formula of Alkanes**
+- Alkanes are in the form:
+- C<sub>n</sub>H<sub>2n+2</sub>
+- n is the number of carbons
 
 **Where does hydrocarbons come from**
 - Crude oil
@@ -1271,20 +1276,23 @@ They are `SPECIAL`
 
 **Naming Hydrocarbons**
 - The prefix designates the number of carbons:
-  - ![img](Prefixes.PNG)
+  - ![img](http://www.my-lyceum.net/MyLyceum/images/gk/hydrocarbons%20img4.jpg)
 - The suffix describes the hydrocarbon:
-  - ![img](Suffixes.PNG)
+  - ![img](http://www.wissensdrang.com/media/oc03.gif)
 
 **Make sure your write the amount of Hydrogens + Carbons in hydrocarbons**
 
 
 
 <style>
+  .syntax--meta.syntax--bullet-point.syntax--star.syntax--text span{
+    color: grey;
+  }
+
   .syntax--meta.syntax--paragraph.syntax--text {
     color: black;
   }
 </style>
-
 
 
 ,
