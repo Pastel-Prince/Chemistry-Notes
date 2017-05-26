@@ -1283,6 +1283,75 @@ They are `SPECIAL`
 **Make sure your write the amount of Hydrogens + Carbons in hydrocarbons**
 
 
+--------------------------------------------------------------
+## Lesson 2 ##
+
+**Isomers:**
+  - Same formula; Different Structure
+  - Dispersion forces are relatively the same because there are the same amount of electrons
+  - Isomers have slightly different properties
+
+**To create different isomers**
+- Take off end C and replace it with a central C
+- Keep repeating until there are no end carbons.
+
+**Naming of isomers**
+- Find longest chain;
+- Give each carbon in the chain a number
+- Pentane = 5 carbons in a line;
+- Circle the branches
+- Name the branches. I.e; if one carbon in branch then its a methyl branch
+- Naming Scheme;
+  - Location of branch [1,2,3,4,...], Number of branches at location [di,tri,quad,...], Name of longest chain [Propane,Butane etc.]
+
+
+-----------------------------------------------------------------
+
+## Naming Scheme of alkenes ##
+
+**There is no such thing as Methene**
+- For an alkene you need a carbon - carbon double bond
+
+**Formula for amount of hydrogens**
+- C<sub>n</sub>H<sub>2n</sub>
+
+**Ethene**
+- 2 Carbons
+- C -- C
+- C<sub>n</sub>H<sub>2n</sub> --> C<sub>2</sub>H<sub>2x2</sub> --> C<sub>2</sub>H<sub>4</sub>
+
+**Propene**
+- 3 Carbons
+- C -- C - C
+- - C<sub>n</sub>H<sub>2n</sub> --> C<sub>3</sub>H<sub>2x3</sub> --> C<sub>3</sub>H<sub>6</sub>
+
+**For isomers of 'ENES' shift the double bonds**
+- First thing you do to make an isomer is shift the double bonds
+- After that you can reduce the size of the longest string
+
+**But-1-ene**
+- 4 Carbons
+- C -- C - C - C **OR** C - C -- C - C
+- **When naming, the double bond takes precedence**
+  - Double bond must be in main longest chain
+  - Have to give a number to where the double bond starts
+  - So for example; C -- C - C - C is `But-1-ene`
+  - and; C - C -- C - C is `But-2-ene`
+
+**In old textbooks they may be different**
+- In old textbooks the number 1 may be missing from "ene's"; butene == but-1-ene;
+- some textbooks may put the number out the front; 1 butene == but-1-ene;
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
   .syntax--meta.syntax--bullet-point.syntax--star.syntax--text span{
